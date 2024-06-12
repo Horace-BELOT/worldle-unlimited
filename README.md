@@ -2,7 +2,7 @@
 
 [Worldle](https://worldle.teuteuf.fr/) is a game where you must guess a country from its outline. You can only play this game once every day.
 
-In this repository, we implemented using Python & Dash a simple game where you have to guess a country from its outlines.
+In this repository, we implemented using Python & Dash a simple game where you have to guess a country from its outlines. However, you can guess as many countries as you wish
 
 ## Data
 

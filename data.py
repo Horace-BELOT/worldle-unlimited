@@ -13,12 +13,29 @@ import io
 import time
 
 from PIL import Image
+import pyproj
 import geopandas as gpd
+import pandas as pd
 import tqdm
 import matplotlib
 import matplotlib.pyplot as plt
-from typing import List, Any
+from shapely.ops import transform
+from typing import List, Any, Dict, Set
 matplotlib.use('Agg')
+
+NAME_COL = "NAME_EN"
+
+
+def shift_geometry(geometry, offset: float):
+    """
+    geometry: geopandas geometry object
+    offset in [0,360]
+    """
+    project = pyproj.Transformer.from_proj(
+        pyproj.Proj(proj='latlong'), 
+        pyproj.Proj(proj='latlong', lon_0=offset)
+    ).transform
+    return transform(project, geometry)
 
 class OutlineDrawer:
     """
@@ -29,24 +46,170 @@ class OutlineDrawer:
     def __init__(
             self, 
             path_lake: str,
-            path_no_lake: str,    
+            path_no_lake: str,
+            debug: bool = False,
         ) -> None:
         print("Loading naturalearthdata.com data")
-        self.gdf_lake: gpd.GeoDataFrame = gpd.read_file(path_lake)
-        self.gdf_nolake: gpd.GeoDataFrame = gpd.read_file(path_no_lake)
+        gdf_lake: gpd.GeoDataFrame = gpd.read_file(path_lake)
+        gdf_nolake: gpd.GeoDataFrame = gpd.read_file(path_no_lake)
+        self.df: gpd.GeoDataFrame = self.remove_lakes(gdf_lake, gdf_nolake)
+        self.df = self.merge_countries()
+        self.remove_data(debug=debug)
+
+        self.df.sort_values(NAME_COL, inplace=True)
+        self.df.reset_index(inplace=True, drop=True)
+
+        self.shift_countries()
         self.draw_all_countries()
+    
+    def shift_countries(self):
+        """
+        Some countries like Russia, new zealand, are distorted because
+        they are on the left & right side of the used common projection
+        """
+        geometry_shift: Dict[str, float] = {
+            "Russia": 180,
+            "United States of America": 180,
+            "New Zealand": 180,
+            "Fiji": 180,
+            "Kiribati": 180,
+        }
+        for country_name, offset in geometry_shift.items():
+            m: pd.Series = self.df["FINAL_GEOUNIT"] == country_name
+            self.df.loc[m, "geometry"] = self.df.loc[m, "geometry"].apply(
+                lambda geom: shift_geometry(geom, offset)
+            )
+
+
+    def merge_countries(self) -> gpd.GeoDataFrame:
+        """Manually merges country together"""
+
+        d_map: Dict[str, str] = {
+            # Georgia
+            "Ajaria": "Georgia",
+            "Georgia": "Georgia",
+            # Cyprus
+            "Akrotiri Sovereign Base Area": "Cyprus",
+            "Dhekelia Sovereign Base Area": "Cyprus",
+            "Cyprus No Mans Area": "Cyprus",
+            "Northern Cyprus": "Cyprus",
+            "Cyprus": "Cyprus",
+            # Antigua & Barbuda
+            "Antigua": "Antigua and Barbuda",
+            "Barbuda": "Antigua and Barbuda",
+            # Bosnia and Herzegovina
+            "Brcko District": "Bosnia and Herzegovina",
+            "Bosnia and Herzegovina": "Bosnia and Herzegovina",
+            "Republic Srpska": "Bosnia and Herzegovina",
+            # Solomon Islands
+            "Bougainville": "Solomon Islands",
+            # Belgium
+            "Brussels Capital Region": "Belgium",
+            "Flemish Region": "Belgium",
+            "Walloon Region": "Belgium",
+            # Iraq
+            "Iraqi Kurdistan": "Iraq",
+            "Iraq": "Iraq",
+            # Kazakhstan
+            "Baykonur Cosmodrome": "Kazakhstan",
+            "Kazakhstan": "Kazakhstan",
+            # South Korea
+            "Korean Demilitarized Zone (south)": "South Korea",
+            "South Korea": "South Korea",
+            # North Korea
+            "Korean Demilitarized Zone (north)": "North Korea",
+            "North Korea": "North Korea",
+            # United Kingdom
+            "Northern Ireland": "United Kingdom",
+            "Scotland": "United Kingdom",
+            "Wales": "United Kingdom",
+            # Somalia
+            "Puntland": "Somalia",
+            "Somalia": "Somalia",
+            "Somaliland": "Somalia",
+            # Serbia
+            "Serbia": "Serbia",
+            "Vojvodina" : "Serbia",
+            # Tanzania
+            "Zanzibar": "Tanzania",
+            "Tanzania": "Tanzania",
+        }
+        self.df.reset_index(inplace=True, drop=True)
+        self.df["FINAL_GEOUNIT"] = self.df["GEOUNIT"].map(d_map)  # Initializing column as empty
+        m = self.df["FINAL_GEOUNIT"].isna()
+        self.df.loc[m, "FINAL_GEOUNIT"] = self.df.loc[m, "GEOUNIT"]
+        return self.df
+
+
+    def remove_lakes(
+            self, 
+            gdf_lake: gpd.GeoDataFrame,
+            gdf_nolake: gpd.GeoDataFrame,
+        ) -> gpd.GeoDataFrame:
+        out: List[pd.DataFrame] = []
+        pbar = tqdm.tqdm(enumerate(gdf_lake["GEOUNIT"].sort_values().items()), desc="")
+        nrows: int = len(gdf_lake)
+        for j, (idx, country_name) in pbar:
+            pbar.set_description(f"Removing lakes: {country_name} ({j + 1} / {nrows})")
+
+            df_country_lake: gpd.GeoDataFrame = gdf_lake[gdf_lake["GEOUNIT"] == country_name]
+            sov: str = df_country_lake["SOVEREIGNT"].iloc[0]
+            df_country_no_lake: gpd.GeoDataFrame = gdf_nolake[gdf_nolake["SOVEREIGNT"] == sov]
+            if df_country_no_lake.empty:
+                print(f"No no-lake data for {country_name} (sovereignty = {sov})")
+            else:
+                df = df_country_lake.overlay(
+                    right=df_country_no_lake[["geometry"]],
+                    how="intersection",
+                    keep_geom_type=False
+                )
+                out.append(df)
+        return pd.concat(out)
+
+
+    def remove_data(self, debug: bool = False) -> None:
+        """Removes some data that is too low resolution"""
+        removed: List[str] = [
+            "Antarctica", 
+            "Ashmore and Cartier Islands",
+            "Bajo Nuevo Bank (Petrel Is.)",
+            "Baker Island",
+            "Bir Tawil", "Bouvet Island",
+            "Brazilian Island", "Clipperton Island",
+            "Coral Sea Islands", "Gaza", "Gibraltar",
+            "Howland Island", "Jan Mayen", "Jarvis Island",
+            "Johnston Atoll", "Kingman Reef",
+            "Midway Islands", "Navassa Island",
+            "Palmyra Atoll", "Saint Barthelemy",
+            "Scarborough Reef", "Siachen Glacier",
+            "West Bank", "Western Sahara",
+            
+            "Nauru", "Saint Helena", "Saint Martin",
+            "Sint Maarten", "Tokelau", "UNDOF",
+            "US Naval Base Guantanamo Bay", "Wake Atoll",
+        ]
+        if not debug:
+            mask: pd.Series = ~self.df["FINAL_GEOUNIT"].isin(removed)
+            self.df = self.df[mask]
+        else:
+            mask: pd.Series = self.df["FINAL_GEOUNIT"].isna()
+            for geounit_to_remove in removed:
+                mask_temp: pd.Series = self.df["FINAL_GEOUNIT"] == geounit_to_remove
+                if mask_temp.sum() == 0:
+                    print(f"remove_data | No country found with geounit={geounit_to_remove}")
+                mask &= mask_temp
+            self.df = self.df[mask]
 
     def draw_all_countries(self) -> None:
         # We iterate on the sub-unit (separating France from its islands etc...)
-        pbar = tqdm.tqdm(enumerate(self.gdf_lake["GEOUNIT"].sort_values().items()), desc="")
-        nrows: int = len(self.gdf_lake)
-        for j, (idx, country_name) in pbar:
+        self.df.sort_values(by="FINAL_GEOUNIT", inplace=True)
+        self.df.reset_index(inplace=True, drop=True)
+        pbar = tqdm.tqdm(enumerate(self.df["FINAL_GEOUNIT"].unique()), desc="")
+        nrows: int = len(self.df)
+        out_records: List[Dict[str, str]] = []
+        for j, country_name in pbar:
             pbar.set_description(f"Drawing country outlines: {country_name} ({j} / {nrows})")
-
-            df_country_lake: gpd.GeoDataFrame = self.gdf_lake[self.gdf_lake["GEOUNIT"] == country_name]
-            sov: str = df_country_lake["SOVEREIGNT"].iloc[0]
-            df_country_no_lake: gpd.GeoDataFrame = self.gdf_lake[self.gdf_lake["SOVEREIGNT"] == sov]
-            df = df_country_lake.overlay(right=df_country_no_lake, how="intersection")
+            df = self.df.loc[self.df["FINAL_GEOUNIT"] == country_name, :]
 
             fig, ax = plt.subplots(figsize=(10, 10))
             fig.patch.set_facecolor('black')
@@ -56,10 +219,16 @@ class OutlineDrawer:
             # We remove all non-alphanum characters and replace spaces with underscore
             file_name: str = __class__.get_file_name(country_name)
             file_path: str = f"files/outlines/{file_name}.png"
-            self.gdf_lake.loc[idx, "file_name"] = file_name  # Saving file name to dataframe
+            out_records.append({
+                "file_name": file_name,
+                "file_path": file_path,
+                "FINAL_GEOUNIT": country_name,
+            })
             # We write the image to a PIL Image
             buf = io.BytesIO()
-            plt.savefig(buf, format='png', bbox_inches='tight', pad_inches=0, facecolor='black', dpi=300)
+            plt.savefig(
+                buf, format='png', bbox_inches='tight', 
+                pad_inches=0, facecolor='black', dpi=300)
             buf.seek(0)
             # We ensure that the image is square
             image: Image = Image.open(buf)
@@ -70,8 +239,9 @@ class OutlineDrawer:
                 plt.close()
             except:
                 pass
-        df_path: str = "files/outlines/DATAFRAME.csv"
-        self.gdf_lake.to_csv(df_path, sep=";", index=False)
+        df_path: str = "files/DATAFRAME_outlines.csv"
+        df = pd.DataFrame.from_records(out_records)
+        df.to_csv(df_path, sep=";", index=False)
         
     @staticmethod
     def get_file_name(country_name: str) -> str:
@@ -114,6 +284,7 @@ class OutlineDrawer:
 
 if __name__ == "__main__":
     shp_path_with_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_map_units", "ne_10m_admin_0_map_units.shp")
+    # shp_path_with_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_countries_iso", "ne_10m_admin_0_countries_iso.shp")
     shp_path_without_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_countries_lakes", "ne_10m_admin_0_countries_lakes.shp")
     
     od = OutlineDrawer(

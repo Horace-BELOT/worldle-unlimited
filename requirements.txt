@@ -2,3 +2,5 @@ dash
 matplotlib
 pandas
 geopandas
+tqdm
+typing
