@@ -8,6 +8,24 @@ In this repository, we implemented using Python & Dash a simple game where you h
 
 ![Flag Image](https://github.com/Horace-BELOT/worldle-unlimited/blob/master/files/images_readme/example_flag.png)
 
+## Setup
+
+```bash
+python3 -m pip install -r requirements.txt
+python3 main.py
+```
+
+Output:
+```bash
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'main'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8050
+Press CTRL+C to quit
+```
+Then simply go to [http://127.0.0.1:8050/](http://127.0.0.1:8050/) (might be different on your machine).
 
 ## Data
 
