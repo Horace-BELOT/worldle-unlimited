@@ -11,11 +11,15 @@ In this repository, we implemented using Python & Dash a simple game where you h
 
 ## Data
 
-The data comes from naturalearthdata.com : 
+### Outline data
 
-https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/
+The outline data comes from [naturalearthdata.com](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/).
 
-In order to obtain correct data, we have to combine the data if countries without the bordering lakes and the data that splits some countries from their far-away territories. This allows us to have both countries with their border stopping at neighboring lakes (which is a must have for countries like Tanzania), and to have, for example, France split between mainland, French Guyana, and its other territories.
+In order to obtain correct data, we have to combine the data if countries without the bordering lakes and the data that splits some countries from their far-away territories. This allows us to have both countries with their border stopping at neighboring lakes (which is a must have for countries like Tanzania, Turkmenistan or Nicaragua), and to have, for example, France split between mainland, French Guyana, and its other territories.
+
+### Flag data
+
+Flags, capitals and continents are scrapped from [Flagpedia](https://flagpedia.net/).
 
 ## Improvements to implement
 
