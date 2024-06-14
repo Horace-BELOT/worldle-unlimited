@@ -4,3 +4,4 @@ pandas
 geopandas
 tqdm
 typing
+beautifulsoup4
