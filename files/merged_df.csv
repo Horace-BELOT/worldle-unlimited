@@ -1,0 +1,283 @@
+population;area;name;flag_file_path;flag_file_name;capital;continent;outline_file_name;Unnamed: 0;outline_file_path;FINAL_GEOUNIT;outline_unuseable
+32225560.0;652230.0;Afghanistan;files/flags\Afghanistan.png;Afghanistan.png;Kabul;Asia;Afghanistan.png;0.0;files/outlines/Afghanistan.png;Afghanistan;False
+29789.0;1580.0;Åland Islands;files/flags\Åland Islands.png;Åland Islands.png;Mariehamn;Europe;Howland_Island.png;108.0;files/outlines/Howland_Island.png;Howland Island;True
+2862427.0;28748.0;Albania;files/flags\Albania.png;Albania.png;Tirana;Europe;Albania.png;2.0;files/outlines/Albania.png;Albania;False
+43000000.0;2381740.0;Algeria;files/flags\Algeria.png;Algeria.png;Algiers;Africa;Algeria.png;3.0;files/outlines/Algeria.png;Algeria;False
+56700.0;199.0;American Samoa;files/flags\American Samoa.png;American Samoa.png;Pago Pago;Oceania;American_Samoa.png;4.0;files/outlines/American_Samoa.png;American Samoa;False
+77543.0;468.0;Andorra;files/flags\Andorra.png;Andorra.png;Andorra la Vella;Europe;Andorra.png;5.0;files/outlines/Andorra.png;Andorra;False
+31127674.0;1246700.0;Angola;files/flags\Angola.png;Angola.png;Luanda;Africa;Angola.png;6.0;files/outlines/Angola.png;Angola;False
+14869.0;91.0;Anguilla;files/flags\Anguilla.png;Anguilla.png;The Valley;North America;Anguilla.png;7.0;files/outlines/Anguilla.png;Anguilla;False
+3000.0;14000000.0;Antarctica;files/flags\Antarctica.png;Antarctica.png;;;Antarctica.png;8.0;files/outlines/Antarctica.png;Antarctica;False
+96453.0;442.0;Antigua and Barbuda;files/flags\Antigua and Barbuda.png;Antigua and Barbuda.png;Saint John's;North America;Antigua_and_Barbuda.png;9.0;files/outlines/Antigua_and_Barbuda.png;Antigua and Barbuda;False
+44938712.0;2780400.0;Argentina;files/flags\Argentina.png;Argentina.png;Buenos Aires;South America;Argentina.png;10.0;files/outlines/Argentina.png;Argentina;False
+2957500.0;29743.0;Armenia;files/flags\Armenia.png;Armenia.png;Yerevan;Asia;Armenia.png;11.0;files/outlines/Armenia.png;Armenia;False
+112309.0;180.0;Aruba;files/flags\Aruba.png;Aruba.png;Oranjestad;North America;Aruba.png;12.0;files/outlines/Aruba.png;Aruba;False
+25627280.0;7692020.0;Australia;files/flags\Australia.png;Australia.png;Canberra;Oceania;Australia.png;14.0;files/outlines/Australia.png;Australia;False
+8902600.0;83871.0;Austria;files/flags\Austria.png;Austria.png;Vienna;Europe;Austria.png;15.0;files/outlines/Austria.png;Austria;False
+10067108.0;86600.0;Azerbaijan;files/flags\Azerbaijan.png;Azerbaijan.png;Baku;Asia;Azerbaijan.png;16.0;files/outlines/Azerbaijan.png;Azerbaijan;False
+385340.0;13943.0;Bahamas;files/flags\Bahamas.png;Bahamas.png;Nassau;North America;The_Bahamas.png;244.0;files/outlines/The_Bahamas.png;The Bahamas;False
+1543300.0;778.0;Bahrain;files/flags\Bahrain.png;Bahrain.png;Manama;Asia;Bahrain.png;18.0;files/outlines/Bahrain.png;Bahrain;False
+168163758.0;147570.0;Bangladesh;files/flags\Bangladesh.png;Bangladesh.png;Dhaka;Asia;Bangladesh.png;21.0;files/outlines/Bangladesh.png;Bangladesh;False
+287025.0;430.0;Barbados;files/flags\Barbados.png;Barbados.png;Bridgetown;North America;Barbados.png;22.0;files/outlines/Barbados.png;Barbados;False
+9413446.0;207600.0;Belarus;files/flags\Belarus.png;Belarus.png;Minsk;Europe;Belarus.png;23.0;files/outlines/Belarus.png;Belarus;False
+11522169.0;30528.0;Belgium;files/flags\Belgium.png;Belgium.png;Brussels;Europe;Belgium.png;24.0;files/outlines/Belgium.png;Belgium;False
+408487.0;22966.0;Belize;files/flags\Belize.png;Belize.png;Belmopan;North America;Belize.png;25.0;files/outlines/Belize.png;Belize;False
+11733059.0;114763.0;Benin;files/flags\Benin.png;Benin.png;Porto-Novo;Africa;Benin.png;26.0;files/outlines/Benin.png;Benin;False
+64027.0;54.0;Bermuda;files/flags\Bermuda.png;Bermuda.png;Hamilton;North America;Bermuda.png;27.0;files/outlines/Bermuda.png;Bermuda;False
+741672.0;38394.0;Bhutan;files/flags\Bhutan.png;Bhutan.png;Thimphu;Asia;Bhutan.png;28.0;files/outlines/Bhutan.png;Bhutan;False
+11469896.0;1098580.0;Bolivia;files/flags\Bolivia.png;Bolivia.png;Sucre;South America;Bolivia.png;30.0;files/outlines/Bolivia.png;Bolivia;False
+3301000.0;51209.0;Bosnia and Herzegovina;files/flags\Bosnia and Herzegovina.png;Bosnia and Herzegovina.png;Sarajevo;Europe;Bosnia_and_Herzegovina.png;31.0;files/outlines/Bosnia_and_Herzegovina.png;Bosnia and Herzegovina;False
+2338851.0;581730.0;Botswana;files/flags\Botswana.png;Botswana.png;Gaborone;Africa;Botswana.png;32.0;files/outlines/Botswana.png;Botswana;False
+0.0;49.0;Bouvet Island;files/flags\Bouvet Island.png;Bouvet Island.png;;;Bouvet_Island.png;33.0;files/outlines/Bouvet_Island.png;Bouvet Island;True
+211173432.0;8515770.0;Brazil;files/flags\Brazil.png;Brazil.png;Brasília;South America;Brazil.png;34.0;files/outlines/Brazil.png;Brazil;False
+0.0;60.0;British Indian Ocean Territory;files/flags\British Indian Ocean Territory.png;British Indian Ocean Territory.png;Diego Garcia;Africa;British_Indian_Ocean_Territory.png;36.0;files/outlines/British_Indian_Ocean_Territory.png;British Indian Ocean Territory;False
+442400.0;5765.0;Brunei;files/flags\Brunei.png;Brunei.png;Bandar Seri Begawan;Asia;Brunei.png;38.0;files/outlines/Brunei.png;Brunei;False
+7000039.0;111002.0;Bulgaria;files/flags\Bulgaria.png;Bulgaria.png;Sofia;Europe;Bulgaria.png;39.0;files/outlines/Bulgaria.png;Bulgaria;False
+20870060.0;274222.0;Burkina Faso;files/flags\Burkina Faso.png;Burkina Faso.png;Ouagadougou;Africa;Burkina_Faso.png;40.0;files/outlines/Burkina_Faso.png;Burkina Faso;False
+10953317.0;27834.0;Burundi;files/flags\Burundi.png;Burundi.png;Gitega;Africa;Burundi.png;41.0;files/outlines/Burundi.png;Burundi;False
+15288489.0;181035.0;Cambodia;files/flags\Cambodia.png;Cambodia.png;Phnom Penh;Asia;Cambodia.png;43.0;files/outlines/Cambodia.png;Cambodia;False
+25876000.0;475442.0;Cameroon;files/flags\Cameroon.png;Cameroon.png;Yaoundé;Africa;Cameroon.png;44.0;files/outlines/Cameroon.png;Cameroon;False
+37935814.0;9984670.0;Canada;files/flags\Canada.png;Canada.png;Ottawa;North America;Canada.png;45.0;files/outlines/Canada.png;Canada;False
+550483.0;4033.0;Cape Verde;files/flags\Cape Verde.png;Cape Verde.png;Praia;Africa;Cabo_Verde.png;42.0;files/outlines/Cabo_Verde.png;Cabo Verde;False
+25157.0;328.0;Caribbean Netherlands;files/flags\Caribbean Netherlands.png;Caribbean Netherlands.png;;;Caribbean_Netherlands.png;46.0;files/outlines/Caribbean_Netherlands.png;Caribbean Netherlands;False
+65813.0;264.0;Cayman Islands;files/flags\Cayman Islands.png;Cayman Islands.png;George Town;North America;Cayman_Islands.png;47.0;files/outlines/Cayman_Islands.png;Cayman Islands;False
+5496011.0;622984.0;Central African Republic;files/flags\Central African Republic.png;Central African Republic.png;Bangui;Africa;Central_African_Republic.png;48.0;files/outlines/Central_African_Republic.png;Central African Republic;False
+15692969.0;1284000.0;Chad;files/flags\Chad.png;Chad.png;N'Djamena;Africa;Chad.png;49.0;files/outlines/Chad.png;Chad;False
+19107216.0;756102.0;Chile;files/flags\Chile.png;Chile.png;Santiago;South America;Chile.png;50.0;files/outlines/Chile.png;Chile;False
+1401492920.0;9596960.0;China;files/flags\China.png;China.png;Beijing;Asia;China.png;51.0;files/outlines/China.png;China;False
+1928.0;135.0;Christmas Island;files/flags\Christmas Island.png;Christmas Island.png;Flying Fish Cove;Oceania;Christmas_Island.png;52.0;files/outlines/Christmas_Island.png;Christmas Island;False
+538.0;14.0;Cocos Islands;files/flags\Cocos Islands.png;Cocos Islands.png;West Island;Oceania;Cocos_(Keeling)_Islands.png;54.0;files/outlines/Cocos_(Keeling)_Islands.png;Cocos (Keeling) Islands;False
+49395678.0;1141750.0;Colombia;files/flags\Colombia.png;Colombia.png;Bogotá;South America;Colombia.png;55.0;files/outlines/Colombia.png;Colombia;False
+873724.0;1862.0;Comoros;files/flags\Comoros.png;Comoros.png;Moroni;Africa;Comoros.png;56.0;files/outlines/Comoros.png;Comoros;False
+5380508.0;342000.0;Republic of the Congo;files/flags\Republic of the Congo.png;Republic of the Congo.png;Brazzaville;Africa;Republic_of_the_Congo.png;197.0;files/outlines/Republic_of_the_Congo.png;Republic of the Congo;False
+86790567.0;2344860.0;DR Congo;files/flags\DR Congo.png;DR Congo.png;Kinshasa;Africa;Democratic_Republic_of_the_Congo.png;65.0;files/outlines/Democratic_Republic_of_the_Congo.png;Democratic Republic of the Congo;False
+15200.0;236.0;Cook Islands;files/flags\Cook Islands.png;Cook Islands.png;Avarua;Oceania;Cook_Islands.png;57.0;files/outlines/Cook_Islands.png;Cook Islands;False
+5058007.0;51100.0;Costa Rica;files/flags\Costa Rica.png;Costa Rica.png;San José;North America;Costa_Rica.png;59.0;files/outlines/Costa_Rica.png;Costa Rica;False
+25823071.0;322463.0;Côte d'Ivoire;files/flags\Côte d'Ivoire.png;Côte d'Ivoire.png;Yamoussoukro;Africa;Ivory_Coast.png;119.0;files/outlines/Ivory_Coast.png;Ivory Coast;False
+4076246.0;56594.0;Croatia;files/flags\Croatia.png;Croatia.png;Zagreb;Europe;Croatia.png;60.0;files/outlines/Croatia.png;Croatia;False
+11209628.0;109884.0;Cuba;files/flags\Cuba.png;Cuba.png;Havana;North America;Cuba.png;61.0;files/outlines/Cuba.png;Cuba;False
+158665.0;444.0;Curaçao;files/flags\Curaçao.png;Curaçao.png;Willemstad;North America;Curaçao.png;62.0;files/outlines/Curaçao.png;Curaçao;False
+875900.0;9251.0;Cyprus;files/flags\Cyprus.png;Cyprus.png;Nicosia;Europe;Cyprus.png;63.0;files/outlines/Cyprus.png;Cyprus;False
+10681161.0;78865.0;Czechia;files/flags\Czechia.png;Czechia.png;Prague;Europe;Czechia.png;64.0;files/outlines/Czechia.png;Czechia;False
+5822763.0;43094.0;Denmark;files/flags\Denmark.png;Denmark.png;Copenhagen;Europe;Denmark.png;66.0;files/outlines/Denmark.png;Denmark;False
+1078373.0;23200.0;Djibouti;files/flags\Djibouti.png;Djibouti.png;Djibouti;Africa;Djibouti.png;67.0;files/outlines/Djibouti.png;Djibouti;False
+71808.0;751.0;Dominica;files/flags\Dominica.png;Dominica.png;Roseau;North America;Dominica.png;68.0;files/outlines/Dominica.png;Dominica;False
+10358320.0;48671.0;Dominican Republic;files/flags\Dominican Republic.png;Dominican Republic.png;Santo Domingo;North America;Dominican_Republic.png;69.0;files/outlines/Dominican_Republic.png;Dominican Republic;False
+17431712.0;276841.0;Ecuador;files/flags\Ecuador.png;Ecuador.png;Quito;South America;Ecuador.png;71.0;files/outlines/Ecuador.png;Ecuador;False
+100052943.0;1002450.0;Egypt;files/flags\Egypt.png;Egypt.png;Cairo;Africa, Asia;Egypt.png;72.0;files/outlines/Egypt.png;Egypt;False
+6704864.0;21041.0;El Salvador;files/flags\El Salvador.png;El Salvador.png;San Salvador;North America;El_Salvador.png;73.0;files/outlines/El_Salvador.png;El Salvador;False
+55977178.0;130279.0;England;files/flags\England.png;England.png;London;;England.png;;;;False
+1358276.0;28051.0;Equatorial Guinea;files/flags\Equatorial Guinea.png;Equatorial Guinea.png;Malabo;Africa;Equatorial_Guinea.png;74.0;files/outlines/Equatorial_Guinea.png;Equatorial Guinea;False
+3497117.0;117600.0;Eritrea;files/flags\Eritrea.png;Eritrea.png;Asmara;Africa;Eritrea.png;75.0;files/outlines/Eritrea.png;Eritrea;False
+1328360.0;45227.0;Estonia;files/flags\Estonia.png;Estonia.png;Tallinn;Europe;Estonia.png;76.0;files/outlines/Estonia.png;Estonia;False
+1093238.0;17364.0;Eswatini;files/flags\Eswatini.png;Eswatini.png;Lobamba;Africa;eSwatini.png;275.0;files/outlines/eSwatini.png;eSwatini;False
+98665000.0;1104300.0;Ethiopia;files/flags\Ethiopia.png;Ethiopia.png;Addis Ababa;Africa;Ethiopia.png;77.0;files/outlines/Ethiopia.png;Ethiopia;False
+3198.0;12173.0;Falkland Islands;files/flags\Falkland Islands.png;Falkland Islands.png;Stanley;South America;Falkland_Islands.png;78.0;files/outlines/Falkland_Islands.png;Falkland Islands;False
+52124.0;1393.0;Faroe Islands;files/flags\Faroe Islands.png;Faroe Islands.png;Tórshavn;Europe;Faroe_Islands.png;79.0;files/outlines/Faroe_Islands.png;Faroe Islands;False
+884887.0;18272.0;Fiji;files/flags\Fiji.png;Fiji.png;Suva;Oceania;Fiji.png;81.0;files/outlines/Fiji.png;Fiji;False
+5527573.0;338424.0;Finland;files/flags\Finland.png;Finland.png;Helsinki;Europe;Finland.png;82.0;files/outlines/Finland.png;Finland;False
+67064000.0;640679.0;France;files/flags\France.png;France.png;Paris;Europe;France.png;83.0;files/outlines/France.png;France;False
+290691.0;83534.0;French Guiana;files/flags\French Guiana.png;French Guiana.png;Cayenne;South America;French_Guiana.png;84.0;files/outlines/French_Guiana.png;French Guiana;False
+275918.0;4167.0;French Polynesia;files/flags\French Polynesia.png;French Polynesia.png;Papeetē;Oceania;French_Polynesia.png;85.0;files/outlines/French_Polynesia.png;French Polynesia;False
+0.0;7747.0;French Southern and Antarctic Lands;files/flags\French Southern and Antarctic Lands.png;French Southern and Antarctic Lands.png;Port-aux-Français;;French_Southern_and_Antarctic_Lands.png;86.0;files/outlines/French_Southern_and_Antarctic_Lands.png;French Southern and Antarctic Lands;False
+2172579.0;267668.0;Gabon;files/flags\Gabon.png;Gabon.png;Libreville;Africa;Gabon.png;87.0;files/outlines/Gabon.png;Gabon;False
+2347706.0;11295.0;Gambia;files/flags\Gambia.png;Gambia.png;Banjul;Africa;Gambia.png;88.0;files/outlines/Gambia.png;Gambia;False
+3723464.0;69700.0;Georgia;files/flags\Georgia.png;Georgia.png;Tbilisi;Asia;Georgia.png;90.0;files/outlines/Georgia.png;Georgia;False
+83149300.0;357114.0;Germany;files/flags\Germany.png;Germany.png;Berlin;Europe;Germany.png;91.0;files/outlines/Germany.png;Germany;False
+30280811.0;238533.0;Ghana;files/flags\Ghana.png;Ghana.png;Accra;Africa;Ghana.png;92.0;files/outlines/Ghana.png;Ghana;False
+33701.0;6.0;Gibraltar;files/flags\Gibraltar.png;Gibraltar.png;Gibraltar;Europe;Gibraltar.png;93.0;files/outlines/Gibraltar.png;Gibraltar;True
+10724599.0;131957.0;Greece;files/flags\Greece.png;Greece.png;Athens;Europe;Greece.png;94.0;files/outlines/Greece.png;Greece;False
+56081.0;2166090.0;Greenland;files/flags\Greenland.png;Greenland.png;Nuuk;North America;Greenland.png;95.0;files/outlines/Greenland.png;Greenland;False
+112003.0;344.0;Grenada;files/flags\Grenada.png;Grenada.png;St. George's;North America;Grenada.png;96.0;files/outlines/Grenada.png;Grenada;False
+395700.0;1628.0;Guadeloupe;files/flags\Guadeloupe.png;Guadeloupe.png;Basse-Terre;North America;Guadeloupe.png;97.0;files/outlines/Guadeloupe.png;Guadeloupe;False
+172400.0;549.0;Guam;files/flags\Guam.png;Guam.png;Hagåtña;Oceania;Guam.png;98.0;files/outlines/Guam.png;Guam;False
+16604026.0;108889.0;Guatemala;files/flags\Guatemala.png;Guatemala.png;Guatemala City;North America;Guatemala.png;99.0;files/outlines/Guatemala.png;Guatemala;False
+62792.0;78.0;Guernsey;files/flags\Guernsey.png;Guernsey.png;St. Peter Port;Europe;Guernsey.png;100.0;files/outlines/Guernsey.png;Guernsey;False
+12218357.0;245857.0;Guinea;files/flags\Guinea.png;Guinea.png;Conakry;Africa;Guinea.png;101.0;files/outlines/Guinea.png;Guinea;False
+1604528.0;36125.0;Guinea-Bissau;files/flags\Guinea-Bissau.png;Guinea-Bissau.png;Bissau;Africa;Guinea-Bissau.png;102.0;files/outlines/Guinea-Bissau.png;Guinea-Bissau;False
+782766.0;214969.0;Guyana;files/flags\Guyana.png;Guyana.png;Georgetown;South America;Guyana.png;103.0;files/outlines/Guyana.png;Guyana;False
+11577779.0;27750.0;Haiti;files/flags\Haiti.png;Haiti.png;Port-au-Prince;North America;Haiti.png;104.0;files/outlines/Haiti.png;Haiti;False
+0.0;412.0;Heard Island and McDonald Islands;files/flags\Heard Island and McDonald Islands.png;Heard Island and McDonald Islands.png;;;Heard_Island_and_McDonald_Islands.png;105.0;files/outlines/Heard_Island_and_McDonald_Islands.png;Heard Island and McDonald Islands;True
+9158345.0;112492.0;Honduras;files/flags\Honduras.png;Honduras.png;Tegucigalpa;North America;Honduras.png;106.0;files/outlines/Honduras.png;Honduras;False
+7500700.0;1104.0;Hong Kong;files/flags\Hong Kong.png;Hong Kong.png;City of Victoria;Asia;Hong_Kong_S.A.R..png;107.0;files/outlines/Hong_Kong_S.A.R..png;Hong Kong S.A.R.;False
+9772756.0;93028.0;Hungary;files/flags\Hungary.png;Hungary.png;Budapest;Europe;Hungary.png;109.0;files/outlines/Hungary.png;Hungary;False
+364260.0;103000.0;Iceland;files/flags\Iceland.png;Iceland.png;Reykjavik;Europe;Iceland.png;110.0;files/outlines/Iceland.png;Iceland;False
+1359072550.0;3287260.0;India;files/flags\India.png;India.png;New Delhi;Asia;India.png;111.0;files/outlines/India.png;India;False
+266911900.0;1910930.0;Indonesia;files/flags\Indonesia.png;Indonesia.png;Jakarta;Asia, Oceania;Indonesia.png;112.0;files/outlines/Indonesia.png;Indonesia;False
+83230120.0;1648200.0;Iran;files/flags\Iran.png;Iran.png;Tehran;Asia;Iran.png;113.0;files/outlines/Iran.png;Iran;False
+39127900.0;438317.0;Iraq;files/flags\Iraq.png;Iraq.png;Baghdad;Asia;Iraq.png;114.0;files/outlines/Iraq.png;Iraq;False
+4921500.0;70273.0;Ireland;files/flags\Ireland.png;Ireland.png;Dublin;Europe;Ireland.png;115.0;files/outlines/Ireland.png;Ireland;False
+83314.0;572.0;Isle of Man;files/flags\Isle of Man.png;Isle of Man.png;Douglas;Europe;Isle_of_Man.png;116.0;files/outlines/Isle_of_Man.png;Isle of Man;False
+9164160.0;20770.0;Israel;files/flags\Israel.png;Israel.png;Jerusalem;Asia;Israel.png;117.0;files/outlines/Israel.png;Israel;False
+60247214.0;301339.0;Italy;files/flags\Italy.png;Italy.png;Rome;Europe;Italy.png;118.0;files/outlines/Italy.png;Italy;False
+2726667.0;10991.0;Jamaica;files/flags\Jamaica.png;Jamaica.png;Kingston;North America;Jamaica.png;120.0;files/outlines/Jamaica.png;Jamaica;False
+126010000.0;377975.0;Japan;files/flags\Japan.png;Japan.png;Tokyo;Asia;Japan.png;122.0;files/outlines/Japan.png;Japan;False
+106800.0;116.0;Jersey;files/flags\Jersey.png;Jersey.png;Saint Helier;Europe;Jersey.png;124.0;files/outlines/Jersey.png;Jersey;False
+10622608.0;89342.0;Jordan;files/flags\Jordan.png;Jordan.png;Amman;Asia;Jordan.png;126.0;files/outlines/Jordan.png;Jordan;False
+18651680.0;2724900.0;Kazakhstan;files/flags\Kazakhstan.png;Kazakhstan.png;Nur-Sultan;Asia;Kazakhstan.png;127.0;files/outlines/Kazakhstan.png;Kazakhstan;False
+47564296.0;580367.0;Kenya;files/flags\Kenya.png;Kenya.png;Nairobi;Africa;Kenya.png;128.0;files/outlines/Kenya.png;Kenya;False
+120100.0;811.0;Kiribati;files/flags\Kiribati.png;Kiribati.png;South Tarawa;Oceania;Kiribati.png;130.0;files/outlines/Kiribati.png;Kiribati;False
+25450000.0;120540.0;North Korea;files/flags\North Korea.png;North Korea.png;Pyongyang;Asia;North_Korea.png;178.0;files/outlines/North_Korea.png;North Korea;False
+51780579.0;100210.0;South Korea;files/flags\South Korea.png;South Korea.png;Seoul;Asia;South_Korea.png;227.0;files/outlines/South_Korea.png;South Korea;False
+1795666.0;10887.0;Kosovo;files/flags\Kosovo.png;Kosovo.png;Pristina;Europe;Kosovo.png;131.0;files/outlines/Kosovo.png;Kosovo;False
+4420110.0;17818.0;Kuwait;files/flags\Kuwait.png;Kuwait.png;Kuwait City;Asia;Kuwait.png;132.0;files/outlines/Kuwait.png;Kuwait;False
+6490300.0;199951.0;Kyrgyzstan;files/flags\Kyrgyzstan.png;Kyrgyzstan.png;Bishkek;Asia;Kyrgyzstan.png;133.0;files/outlines/Kyrgyzstan.png;Kyrgyzstan;False
+7123205.0;236800.0;Laos;files/flags\Laos.png;Laos.png;Vientiane;Asia;Laos.png;134.0;files/outlines/Laos.png;Laos;False
+1906800.0;64559.0;Latvia;files/flags\Latvia.png;Latvia.png;Riga;Europe;Latvia.png;135.0;files/outlines/Latvia.png;Latvia;False
+6855713.0;10452.0;Lebanon;files/flags\Lebanon.png;Lebanon.png;Beirut;Asia;Lebanon.png;136.0;files/outlines/Lebanon.png;Lebanon;False
+2007201.0;30355.0;Lesotho;files/flags\Lesotho.png;Lesotho.png;Maseru;Africa;Lesotho.png;137.0;files/outlines/Lesotho.png;Lesotho;False
+4475353.0;111369.0;Liberia;files/flags\Liberia.png;Liberia.png;Monrovia;Africa;Liberia.png;138.0;files/outlines/Liberia.png;Liberia;False
+6777452.0;1759540.0;Libya;files/flags\Libya.png;Libya.png;Tripoli;Africa;Libya.png;139.0;files/outlines/Libya.png;Libya;False
+38557.0;160.0;Liechtenstein;files/flags\Liechtenstein.png;Liechtenstein.png;Vaduz;Europe;Liechtenstein.png;140.0;files/outlines/Liechtenstein.png;Liechtenstein;False
+2793350.0;65300.0;Lithuania;files/flags\Lithuania.png;Lithuania.png;Vilnius;Europe;Lithuania.png;141.0;files/outlines/Lithuania.png;Lithuania;False
+613894.0;2586.0;Luxembourg;files/flags\Luxembourg.png;Luxembourg.png;Luxembourg;Europe;Luxembourg.png;142.0;files/outlines/Luxembourg.png;Luxembourg;False
+676100.0;30.0;Macau;files/flags\Macau.png;Macau.png;;;Macao_S.A.R.png;143.0;files/outlines/Macao_S.A.R.png;Macao S.A.R;False
+25680342.0;587041.0;Madagascar;files/flags\Madagascar.png;Madagascar.png;Antananarivo;Africa;Madagascar.png;144.0;files/outlines/Madagascar.png;Madagascar;False
+17563749.0;118484.0;Malawi;files/flags\Malawi.png;Malawi.png;Lilongwe;Africa;Malawi.png;146.0;files/outlines/Malawi.png;Malawi;False
+32700760.0;330803.0;Malaysia;files/flags\Malaysia.png;Malaysia.png;Kuala Lumpur;Asia;Malaysia.png;147.0;files/outlines/Malaysia.png;Malaysia;False
+374775.0;300.0;Maldives;files/flags\Maldives.png;Maldives.png;Malé;Asia;Maldives.png;148.0;files/outlines/Maldives.png;Maldives;False
+19973000.0;1240190.0;Mali;files/flags\Mali.png;Mali.png;Bamako;Africa;Mali.png;149.0;files/outlines/Mali.png;Mali;False
+493559.0;316.0;Malta;files/flags\Malta.png;Malta.png;Valletta;Europe;Malta.png;150.0;files/outlines/Malta.png;Malta;False
+55500.0;181.0;Marshall Islands;files/flags\Marshall Islands.png;Marshall Islands.png;Majuro;Oceania;Marshall_Islands.png;151.0;files/outlines/Marshall_Islands.png;Marshall Islands;False
+376480.0;1128.0;Martinique;files/flags\Martinique.png;Martinique.png;Fort-de-France;North America;Martinique.png;152.0;files/outlines/Martinique.png;Martinique;False
+4077347.0;1030700.0;Mauritania;files/flags\Mauritania.png;Mauritania.png;Nouakchott;Africa;Mauritania.png;153.0;files/outlines/Mauritania.png;Mauritania;False
+1265985.0;2040.0;Mauritius;files/flags\Mauritius.png;Mauritius.png;Port Louis;Africa;Mauritius.png;154.0;files/outlines/Mauritius.png;Mauritius;False
+279471.0;374.0;Mayotte;files/flags\Mayotte.png;Mayotte.png;Mamoudzou;Africa;Mayotte.png;155.0;files/outlines/Mayotte.png;Mayotte;False
+126577691.0;1964380.0;Mexico;files/flags\Mexico.png;Mexico.png;Mexico City;North America;Mexico.png;156.0;files/outlines/Mexico.png;Mexico;False
+104468.0;702.0;Micronesia;files/flags\Micronesia.png;Micronesia.png;Palikir;Oceania;Federated_States_of_Micronesia.png;80.0;files/outlines/Federated_States_of_Micronesia.png;Federated States of Micronesia;False
+2681735.0;33846.0;Moldova;files/flags\Moldova.png;Moldova.png;Chișinău;Europe;Moldova.png;158.0;files/outlines/Moldova.png;Moldova;False
+38300.0;2.02;Monaco;files/flags\Monaco.png;Monaco.png;Monaco;Europe;Monaco.png;159.0;files/outlines/Monaco.png;Monaco;False
+3304526.0;1564110.0;Mongolia;files/flags\Mongolia.png;Mongolia.png;Ulan Bator;Asia;Mongolia.png;160.0;files/outlines/Mongolia.png;Mongolia;False
+622359.0;13812.0;Montenegro;files/flags\Montenegro.png;Montenegro.png;Podgorica;Europe;Montenegro.png;161.0;files/outlines/Montenegro.png;Montenegro;False
+4989.0;102.0;Montserrat;files/flags\Montserrat.png;Montserrat.png;Plymouth;North America;Montserrat.png;162.0;files/outlines/Montserrat.png;Montserrat;False
+35821024.0;446550.0;Morocco;files/flags\Morocco.png;Morocco.png;Rabat;Africa;Morocco.png;163.0;files/outlines/Morocco.png;Morocco;False
+28571310.0;801590.0;Mozambique;files/flags\Mozambique.png;Mozambique.png;Maputo;Africa;Mozambique.png;164.0;files/outlines/Mozambique.png;Mozambique;False
+54339766.0;676578.0;Myanmar;files/flags\Myanmar.png;Myanmar.png;Naypyidaw;Asia;Myanmar.png;165.0;files/outlines/Myanmar.png;Myanmar;False
+2458936.0;825615.0;Namibia;files/flags\Namibia.png;Namibia.png;Windhoek;Africa;Namibia.png;166.0;files/outlines/Namibia.png;Namibia;False
+11000.0;21.0;Nauru;files/flags\Nauru.png;Nauru.png;Yaren;Oceania;Nauru.png;167.0;files/outlines/Nauru.png;Nauru;True
+29609623.0;147181.0;Nepal;files/flags\Nepal.png;Nepal.png;Kathmandu;Asia;Nepal.png;169.0;files/outlines/Nepal.png;Nepal;False
+17438081.0;41850.0;Netherlands;files/flags\Netherlands.png;Netherlands.png;Amsterdam;Europe;Netherlands.png;170.0;files/outlines/Netherlands.png;Netherlands;False
+282200.0;18575.0;New Caledonia;files/flags\New Caledonia.png;New Caledonia.png;Nouméa;Oceania;New_Caledonia.png;171.0;files/outlines/New_Caledonia.png;New Caledonia;False
+4961213.0;270467.0;New Zealand;files/flags\New Zealand.png;New Zealand.png;Wellington;Oceania;New_Zealand.png;172.0;files/outlines/New_Zealand.png;New Zealand;False
+6460411.0;130373.0;Nicaragua;files/flags\Nicaragua.png;Nicaragua.png;Managua;North America;Nicaragua.png;173.0;files/outlines/Nicaragua.png;Nicaragua;False
+22314743.0;1267000.0;Niger;files/flags\Niger.png;Niger.png;Niamey;Africa;Niger.png;174.0;files/outlines/Niger.png;Niger;False
+200963599.0;923768.0;Nigeria;files/flags\Nigeria.png;Nigeria.png;Abuja;Africa;Nigeria.png;175.0;files/outlines/Nigeria.png;Nigeria;False
+1520.0;260.0;Niue;files/flags\Niue.png;Niue.png;Alofi;Oceania;Niue.png;176.0;files/outlines/Niue.png;Niue;False
+1756.0;36.0;Norfolk Island;files/flags\Norfolk Island.png;Norfolk Island.png;Kingston;Oceania;Norfolk_Island.png;177.0;files/outlines/Norfolk_Island.png;Norfolk Island;False
+2077132.0;25713.0;North Macedonia;files/flags\North Macedonia.png;North Macedonia.png;Skopje;Europe;North_Macedonia.png;179.0;files/outlines/North_Macedonia.png;North Macedonia;False
+1885400.0;14130.0;Northern Ireland;files/flags\Northern Ireland.png;Northern Ireland.png;Belfast;;;;;;False
+5051953.0;6020.0;Palestine;files/flags\Palestine.png;Palestine.png;Ramallah;Asia;;;;;False
+5424800.0;77933.0;Scotland;files/flags\Scotland.png;Scotland.png;‎Edinburgh‎;;;;;;False
+300.0;34.0;United States Minor Outlying Islands;files/flags\United States Minor Outlying Islands.png;United States Minor Outlying Islands.png;;;;;;;False
+3139000.0;20779.0;Wales;files/flags\Wales.png;Wales.png;Cardiff;;;;;;False
+56200.0;464.0;Northern Mariana Islands;files/flags\Northern Mariana Islands.png;Northern Mariana Islands.png;Saipan;Oceania;Northern_Mariana_Islands.png;180.0;files/outlines/Northern_Mariana_Islands.png;Northern Mariana Islands;False
+5356789.0;323802.0;Norway;files/flags\Norway.png;Norway.png;Oslo;Europe;Norway.png;181.0;files/outlines/Norway.png;Norway;False
+4664790.0;309500.0;Oman;files/flags\Oman.png;Oman.png;Muscat;Asia;Oman.png;182.0;files/outlines/Oman.png;Oman;False
+218741520.0;907132.0;Pakistan;files/flags\Pakistan.png;Pakistan.png;Islamabad;Asia;Pakistan.png;183.0;files/outlines/Pakistan.png;Pakistan;False
+17900.0;459.0;Palau;files/flags\Palau.png;Palau.png;Ngerulmud;Oceania;Palau.png;184.0;files/outlines/Palau.png;Palau;False
+4218808.0;75417.0;Panama;files/flags\Panama.png;Panama.png;Panama City;North America;Panama.png;186.0;files/outlines/Panama.png;Panama;False
+8935000.0;462840.0;Papua New Guinea;files/flags\Papua New Guinea.png;Papua New Guinea.png;Port Moresby;Oceania;Papua_New_Guinea.png;187.0;files/outlines/Papua_New_Guinea.png;Papua New Guinea;False
+7152703.0;406752.0;Paraguay;files/flags\Paraguay.png;Paraguay.png;Asunción;South America;Paraguay.png;189.0;files/outlines/Paraguay.png;Paraguay;False
+32131400.0;1285220.0;Peru;files/flags\Peru.png;Peru.png;Lima;South America;Peru.png;190.0;files/outlines/Peru.png;Peru;False
+108323702.0;300000.0;Philippines;files/flags\Philippines.png;Philippines.png;Manila;Asia;Philippines.png;191.0;files/outlines/Philippines.png;Philippines;False
+50.0;47.0;Pitcairn Islands;files/flags\Pitcairn Islands.png;Pitcairn Islands.png;Adamstown;Oceania;Pitcairn_Islands.png;192.0;files/outlines/Pitcairn_Islands.png;Pitcairn Islands;False
+38386000.0;312696.0;Poland;files/flags\Poland.png;Poland.png;Warsaw;Europe;Poland.png;193.0;files/outlines/Poland.png;Poland;False
+10276617.0;92090.0;Portugal;files/flags\Portugal.png;Portugal.png;Lisbon;Europe;Portugal.png;194.0;files/outlines/Portugal.png;Portugal;False
+3193694.0;8870.0;Puerto Rico;files/flags\Puerto Rico.png;Puerto Rico.png;San Juan;North America;Puerto_Rico.png;195.0;files/outlines/Puerto_Rico.png;Puerto Rico;False
+2747282.0;11586.0;Qatar;files/flags\Qatar.png;Qatar.png;Doha;Asia;Qatar.png;196.0;files/outlines/Qatar.png;Qatar;False
+859959.0;2511.0;Réunion;files/flags\Réunion.png;Réunion.png;Saint-Denis;Africa;Reunion.png;198.0;files/outlines/Reunion.png;Reunion;False
+19405156.0;238397.0;Romania;files/flags\Romania.png;Romania.png;Bucharest;Europe;Romania.png;199.0;files/outlines/Romania.png;Romania;False
+146780720.0;17098200.0;Russia;files/flags\Russia.png;Russia.png;Moscow;Asia, Europe;Russia.png;200.0;files/outlines/Russia.png;Russia;False
+12374397.0;26338.0;Rwanda;files/flags\Rwanda.png;Rwanda.png;Kigali;Africa;Rwanda.png;201.0;files/outlines/Rwanda.png;Rwanda;False
+9793.0;21.0;Saint Barthélemy;files/flags\Saint Barthélemy.png;Saint Barthélemy.png;Gustavia;North America;Saint_Barthelemy.png;202.0;files/outlines/Saint_Barthelemy.png;Saint Barthelemy;True
+5633.0;394.0;Saint Helena, Ascension and Tristan da Cunha;files/flags\Saint Helena, Ascension and Tristan da Cunha.png;Saint Helena, Ascension and Tristan da Cunha.png;Jamestown;Africa;Saint_Helena.png;203.0;files/outlines/Saint_Helena.png;Saint Helena;True
+52823.0;261.0;Saint Kitts and Nevis;files/flags\Saint Kitts and Nevis.png;Saint Kitts and Nevis.png;Basseterre;North America;Saint_Kitts_and_Nevis.png;204.0;files/outlines/Saint_Kitts_and_Nevis.png;Saint Kitts and Nevis;False
+178696.0;616.0;Saint Lucia;files/flags\Saint Lucia.png;Saint Lucia.png;Castries;North America;Saint_Lucia.png;205.0;files/outlines/Saint_Lucia.png;Saint Lucia;False
+35107.0;53.0;Saint Martin;files/flags\Saint Martin.png;Saint Martin.png;Marigot;North America;Saint_Martin.png;206.0;files/outlines/Saint_Martin.png;Saint Martin;True
+6008.0;242.0;Saint Pierre and Miquelon;files/flags\Saint Pierre and Miquelon.png;Saint Pierre and Miquelon.png;Saint-Pierre;North America;Saint_Pierre_and_Miquelon.png;207.0;files/outlines/Saint_Pierre_and_Miquelon.png;Saint Pierre and Miquelon;False
+110608.0;389.0;Saint Vincent and the Grenadines;files/flags\Saint Vincent and the Grenadines.png;Saint Vincent and the Grenadines.png;Kingstown;North America;Saint_Vincent_and_the_Grenadines.png;208.0;files/outlines/Saint_Vincent_and_the_Grenadines.png;Saint Vincent and the Grenadines;False
+200874.0;2842.0;Samoa;files/flags\Samoa.png;Samoa.png;Apia;Oceania;Samoa.png;209.0;files/outlines/Samoa.png;Samoa;False
+33574.0;61.0;San Marino;files/flags\San Marino.png;San Marino.png;City of San Marino;Europe;San_Marino.png;210.0;files/outlines/San_Marino.png;San Marino;False
+201784.0;964.0;São Tomé and Príncipe;files/flags\São Tomé and Príncipe.png;São Tomé and Príncipe.png;São Tomé;Africa;São_Tomé_and_Principe.png;239.0;files/outlines/São_Tomé_and_Principe.png;São Tomé and Principe;False
+34218169.0;2149690.0;Saudi Arabia;files/flags\Saudi Arabia.png;Saudi Arabia.png;Riyadh;Asia;Saudi_Arabia.png;211.0;files/outlines/Saudi_Arabia.png;Saudi Arabia;False
+16209125.0;196722.0;Senegal;files/flags\Senegal.png;Senegal.png;Dakar;Africa;Senegal.png;213.0;files/outlines/Senegal.png;Senegal;False
+6963764.0;88361.0;Serbia;files/flags\Serbia.png;Serbia.png;Belgrade;Europe;Serbia.png;214.0;files/outlines/Serbia.png;Serbia;False
+97625.0;452.0;Seychelles;files/flags\Seychelles.png;Seychelles.png;Victoria;Africa;Seychelles.png;216.0;files/outlines/Seychelles.png;Seychelles;False
+7901454.0;71740.0;Sierra Leone;files/flags\Sierra Leone.png;Sierra Leone.png;Freetown;Africa;Sierra_Leone.png;218.0;files/outlines/Sierra_Leone.png;Sierra Leone;False
+5703600.0;716.0;Singapore;files/flags\Singapore.png;Singapore.png;Singapore;Asia;Singapore.png;219.0;files/outlines/Singapore.png;Singapore;False
+40614.0;34.0;Sint Maarten;files/flags\Sint Maarten.png;Sint Maarten.png;Philipsburg;North America;Sint_Maarten.png;220.0;files/outlines/Sint_Maarten.png;Sint Maarten;True
+5456362.0;49037.0;Slovakia;files/flags\Slovakia.png;Slovakia.png;Bratislava;Europe;Slovakia.png;221.0;files/outlines/Slovakia.png;Slovakia;False
+2094060.0;20273.0;Slovenia;files/flags\Slovenia.png;Slovenia.png;Ljubljana;Europe;Slovenia.png;222.0;files/outlines/Slovenia.png;Slovenia;False
+680806.0;28896.0;Solomon Islands;files/flags\Solomon Islands.png;Solomon Islands.png;Honiara;Oceania;Solomon_Islands.png;223.0;files/outlines/Solomon_Islands.png;Solomon Islands;False
+15442905.0;637657.0;Somalia;files/flags\Somalia.png;Somalia.png;Mogadishu;Africa;Somalia.png;224.0;files/outlines/Somalia.png;Somalia;False
+58775022.0;1221040.0;South Africa;files/flags\South Africa.png;South Africa.png;Pretoria, Bloemfontein, Cape Town;Africa;South_Africa.png;225.0;files/outlines/South_Africa.png;South Africa;False
+0.0;3903.0;South Georgia;files/flags\South Georgia.png;South Georgia.png;King Edward Point;;South_Georgia_and_the_Islands.png;226.0;files/outlines/South_Georgia_and_the_Islands.png;South Georgia and the Islands;False
+12778250.0;644329.0;South Sudan;files/flags\South Sudan.png;South Sudan.png;Juba;Africa;South_Sudan.png;228.0;files/outlines/South_Sudan.png;South Sudan;False
+47100396.0;505992.0;Spain;files/flags\Spain.png;Spain.png;Madrid;Europe;Spain.png;230.0;files/outlines/Spain.png;Spain;False
+21803000.0;65610.0;Sri Lanka;files/flags\Sri Lanka.png;Sri Lanka.png;Colombo;Asia;Sri_Lanka.png;232.0;files/outlines/Sri_Lanka.png;Sri Lanka;False
+42295645.0;1861480.0;Sudan;files/flags\Sudan.png;Sudan.png;Khartoum;Africa;Sudan.png;233.0;files/outlines/Sudan.png;Sudan;False
+581372.0;163820.0;Suriname;files/flags\Suriname.png;Suriname.png;Paramaribo;South America;Suriname.png;234.0;files/outlines/Suriname.png;Suriname;False
+0.0;61022.0;Svalbard and Jan Mayen;files/flags\Svalbard and Jan Mayen.png;Svalbard and Jan Mayen.png;Longyearbyen;Europe;Jan_Mayen.png;121.0;files/outlines/Jan_Mayen.png;Jan Mayen;True
+10327589.0;450295.0;Sweden;files/flags\Sweden.png;Sweden.png;Stockholm;Europe;Sweden.png;236.0;files/outlines/Sweden.png;Sweden;False
+8586550.0;41284.0;Switzerland;files/flags\Switzerland.png;Switzerland.png;Bern;Europe;Switzerland.png;237.0;files/outlines/Switzerland.png;Switzerland;False
+17070135.0;185180.0;Syria;files/flags\Syria.png;Syria.png;Damascus;Asia;Syria.png;238.0;files/outlines/Syria.png;Syria;False
+23604265.0;36193.0;Taiwan;files/flags\Taiwan.png;Taiwan.png;Taipei;Asia;Taiwan.png;240.0;files/outlines/Taiwan.png;Taiwan;False
+9127000.0;143100.0;Tajikistan;files/flags\Tajikistan.png;Tajikistan.png;Dushanbe;Asia;Tajikistan.png;241.0;files/outlines/Tajikistan.png;Tajikistan;False
+55890747.0;945087.0;Tanzania;files/flags\Tanzania.png;Tanzania.png;Dodoma;Africa;Tanzania.png;242.0;files/outlines/Tanzania.png;Tanzania;False
+66474267.0;513120.0;Thailand;files/flags\Thailand.png;Thailand.png;Bangkok;Asia;Thailand.png;243.0;files/outlines/Thailand.png;Thailand;False
+1387149.0;14919.0;Timor-Leste;files/flags\Timor-Leste.png;Timor-Leste.png;Dili;Asia;East_Timor.png;70.0;files/outlines/East_Timor.png;East Timor;False
+7538000.0;56785.0;Togo;files/flags\Togo.png;Togo.png;Lomé;Africa;Togo.png;245.0;files/outlines/Togo.png;Togo;False
+1400.0;12.0;Tokelau;files/flags\Tokelau.png;Tokelau.png;Fakaofo;Oceania;Tokelau.png;246.0;files/outlines/Tokelau.png;Tokelau;True
+100651.0;747.0;Tonga;files/flags\Tonga.png;Tonga.png;Nuku'alofa;Oceania;Tonga.png;247.0;files/outlines/Tonga.png;Tonga;False
+1363985.0;5130.0;Trinidad and Tobago;files/flags\Trinidad and Tobago.png;Trinidad and Tobago.png;Port of Spain;South America;Trinidad_and_Tobago.png;248.0;files/outlines/Trinidad_and_Tobago.png;Trinidad and Tobago;False
+11722038.0;163610.0;Tunisia;files/flags\Tunisia.png;Tunisia.png;Tunis;Africa;Tunisia.png;249.0;files/outlines/Tunisia.png;Tunisia;False
+83154997.0;783562.0;Turkey;files/flags\Turkey.png;Turkey.png;Ankara;Asia, Europe;Turkey.png;250.0;files/outlines/Turkey.png;Turkey;False
+5942089.0;488100.0;Turkmenistan;files/flags\Turkmenistan.png;Turkmenistan.png;Ashgabat;Asia;Turkmenistan.png;251.0;files/outlines/Turkmenistan.png;Turkmenistan;False
+41369.0;948.0;Turks and Caicos Islands;files/flags\Turks and Caicos Islands.png;Turks and Caicos Islands.png;Cockburn Town;North America;Turks_and_Caicos_Islands.png;252.0;files/outlines/Turks_and_Caicos_Islands.png;Turks and Caicos Islands;False
+10200.0;26.0;Tuvalu;files/flags\Tuvalu.png;Tuvalu.png;Funafuti;Oceania;Tuvalu.png;253.0;files/outlines/Tuvalu.png;Tuvalu;False
+40299300.0;241550.0;Uganda;files/flags\Uganda.png;Uganda.png;Kampala;Africa;Uganda.png;256.0;files/outlines/Uganda.png;Uganda;False
+41902416.0;603500.0;Ukraine;files/flags\Ukraine.png;Ukraine.png;Kyiv;Europe;Ukraine.png;257.0;files/outlines/Ukraine.png;Ukraine;False
+9770529.0;83600.0;United Arab Emirates;files/flags\United Arab Emirates.png;United Arab Emirates.png;Abu Dhabi;Asia;United_Arab_Emirates.png;258.0;files/outlines/United_Arab_Emirates.png;United Arab Emirates;False
+66435600.0;242495.0;United Kingdom;files/flags\United Kingdom.png;United Kingdom.png;London;Europe;United_Kingdom.png;259.0;files/outlines/United_Kingdom.png;United Kingdom;False
+329345637.0;9833520.0;United States;files/flags\United States.png;United States.png;Washington D.C.;North America;United_States_of_America.png;261.0;files/outlines/United_States_of_America.png;United States of America;False
+3518552.0;176215.0;Uruguay;files/flags\Uruguay.png;Uruguay.png;Montevideo;South America;Uruguay.png;262.0;files/outlines/Uruguay.png;Uruguay;False
+34034952.0;447400.0;Uzbekistan;files/flags\Uzbekistan.png;Uzbekistan.png;Tashkent;Asia;Uzbekistan.png;263.0;files/outlines/Uzbekistan.png;Uzbekistan;False
+304500.0;12189.0;Vanuatu;files/flags\Vanuatu.png;Vanuatu.png;Port Vila;Oceania;Vanuatu.png;264.0;files/outlines/Vanuatu.png;Vanuatu;False
+799.0;0.44;Vatican City;files/flags\Vatican City.png;Vatican City.png;Vatican City;Europe;Vatican.png;265.0;files/outlines/Vatican.png;Vatican;False
+32219521.0;916445.0;Venezuela;files/flags\Venezuela.png;Venezuela.png;Caracas;South America;Venezuela.png;266.0;files/outlines/Venezuela.png;Venezuela;False
+96208984.0;331212.0;Vietnam;files/flags\Vietnam.png;Vietnam.png;Hanoi;Asia;Vietnam.png;267.0;files/outlines/Vietnam.png;Vietnam;False
+30030.0;151.0;British Virgin Islands;files/flags\British Virgin Islands.png;British Virgin Islands.png;Road Town;North America;British_Virgin_Islands.png;37.0;files/outlines/British_Virgin_Islands.png;British Virgin Islands;False
+104578.0;347.0;United States Virgin Islands;files/flags\United States Virgin Islands.png;United States Virgin Islands.png;Charlotte Amalie;North America;United_States_Virgin_Islands.png;260.0;files/outlines/United_States_Virgin_Islands.png;United States Virgin Islands;False
+11700.0;142.0;Wallis and Futuna;files/flags\Wallis and Futuna.png;Wallis and Futuna.png;Mata-Utu;Oceania;Wallis_and_Futuna.png;269.0;files/outlines/Wallis_and_Futuna.png;Wallis and Futuna;False
+582463.0;266000.0;Western Sahara;files/flags\Western Sahara.png;Western Sahara.png;El Aaiún;Africa;Western_Sahara.png;271.0;files/outlines/Western_Sahara.png;Western Sahara;True
+29161922.0;527968.0;Yemen;files/flags\Yemen.png;Yemen.png;Sana'a;Asia;Yemen.png;272.0;files/outlines/Yemen.png;Yemen;False
+17381168.0;752612.0;Zambia;files/flags\Zambia.png;Zambia.png;Lusaka;Africa;Zambia.png;273.0;files/outlines/Zambia.png;Zambia;False
+15159624.0;390757.0;Zimbabwe;files/flags\Zimbabwe.png;Zimbabwe.png;Harare;Africa;Zimbabwe.png;274.0;files/outlines/Zimbabwe.png;Zimbabwe;False
+;;;;;;;Aland.png;1.0;files/outlines/Aland.png;Aland;False
+;;;;;;;Ashmore_and_Cartier_Islands.png;13.0;files/outlines/Ashmore_and_Cartier_Islands.png;Ashmore and Cartier Islands;True
+;;;;;;;Azores.png;17.0;files/outlines/Azores.png;Azores;False
+;;;;;;;Bajo_Nuevo_Bank_(Petrel_Is.).png;19.0;files/outlines/Bajo_Nuevo_Bank_(Petrel_Is.).png;Bajo Nuevo Bank (Petrel Is.);True
+;;;;;;;Baker_Island.png;20.0;files/outlines/Baker_Island.png;Baker Island;True
+;;;;;;;Bir_Tawil.png;29.0;files/outlines/Bir_Tawil.png;Bir Tawil;True
+;;;;;;;Brazilian_Island.png;35.0;files/outlines/Brazilian_Island.png;Brazilian Island;True
+;;;;;;;Clipperton_Island.png;53.0;files/outlines/Clipperton_Island.png;Clipperton Island;True
+;;;;;;;Coral_Sea_Islands.png;58.0;files/outlines/Coral_Sea_Islands.png;Coral Sea Islands;True
+;;;;;;;Gaza.png;89.0;files/outlines/Gaza.png;Gaza;True
+;;;;;;;Jarvis_Island.png;123.0;files/outlines/Jarvis_Island.png;Jarvis Island;True
+;;;;;;;Johnston_Atoll.png;125.0;files/outlines/Johnston_Atoll.png;Johnston Atoll;True
+;;;;;;;Kingman_Reef.png;129.0;files/outlines/Kingman_Reef.png;Kingman Reef;True
+;;;;;;;Madeira.png;145.0;files/outlines/Madeira.png;Madeira;False
+;;;;;;;Midway_Islands.png;157.0;files/outlines/Midway_Islands.png;Midway Islands;True
+;;;;;;;Navassa_Island.png;168.0;files/outlines/Navassa_Island.png;Navassa Island;True
+;;;;;;;Palmyra_Atoll.png;185.0;files/outlines/Palmyra_Atoll.png;Palmyra Atoll;True
+;;;;;;;Paracel_Islands.png;188.0;files/outlines/Paracel_Islands.png;Paracel Islands;False
+;;;;;;;Scarborough_Reef.png;212.0;files/outlines/Scarborough_Reef.png;Scarborough Reef;True
+;;;;;;;Serranilla_Bank.png;215.0;files/outlines/Serranilla_Bank.png;Serranilla Bank;False
+;;;;;;;Siachen_Glacier.png;217.0;files/outlines/Siachen_Glacier.png;Siachen Glacier;True
+;;;;;;;Southern_Patagonian_Ice_Field.png;229.0;files/outlines/Southern_Patagonian_Ice_Field.png;Southern Patagonian Ice Field;False
+;;;;;;;Spratly_Islands.png;231.0;files/outlines/Spratly_Islands.png;Spratly Islands;False
+;;;;;;;Svalbard.png;235.0;files/outlines/Svalbard.png;Svalbard;False
+;;;;;;;UNDOF.png;254.0;files/outlines/UNDOF.png;UNDOF;True
+;;;;;;;US_Naval_Base_Guantanamo_Bay.png;255.0;files/outlines/US_Naval_Base_Guantanamo_Bay.png;US Naval Base Guantanamo Bay;True
+;;;;;;;Wake_Atoll.png;268.0;files/outlines/Wake_Atoll.png;Wake Atoll;True
+;;;;;;;West_Bank.png;270.0;files/outlines/West_Bank.png;West Bank;True

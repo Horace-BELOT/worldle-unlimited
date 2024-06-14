@@ -1,176 +1,132 @@
 """
-This file contains the code that creates the image outlines of all countries.
-
-The image outline data comes from:
-https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/
-Two files are needed:
-    - The data without the neighboring lakes
-    - The map unit data (island and overseas territories are split from mainland)
-
+The goal of this script will mainly be to merge data from the outline & the flag datasets.
 """
+import math
 import os
-import io
-import time
 
-from PIL import Image
-import pyproj
-import geopandas as gpd
+from typing import Dict, Any, Set, Iterable, List, Tuple
 import pandas as pd
-import tqdm
-import matplotlib
-import matplotlib.pyplot as plt
-from shapely.ops import transform
-from typing import List, Any, Dict, Set
-matplotlib.use('Agg')
-
-NAME_COL = "NAME_EN"
 
 
-def shift_geometry(geometry, offset: float):
-    """
-    geometry: geopandas geometry object
-    offset in [0,360]
-    """
-    project = pyproj.Transformer.from_proj(
-        pyproj.Proj(proj='latlong'), 
-        pyproj.Proj(proj='latlong', lon_0=offset)
-    ).transform
-    return transform(project, geometry)
+class Ngram:
+    replace_map: Dict[str, str] = {
+        "_": " ",
+        ".png": "",
+        "Å": "A",
+        "é": "e",
+        "ê": "e",
+        "ç": "c",
+    }
 
-class OutlineDrawer:
-    """
-    Draws outline from naturalearthdata.com data.
-    https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/
-    """
+    def __init__(self, s: str, n: int = 3) -> None:
+        """Represents the ngram of a string"""
+        self.n: int = n
+        self.original_s: str = s
+        for k, v in __class__.replace_map.items():
+            s = s.replace(k,v)
+        s = s.lower()
+        self.s: str = s
+
+        self.d: Dict[str, int] = {}
+        nchar: int = len(s)
+        if nchar < n:  # Not enough letters to even build 1 ngram
+            return
+        # We build an iterator with a start and end index
+        for (i1, i2) in zip(range(0, nchar - n + 1), range(n, nchar + 1)):
+            ngram: str = s[i1:i2]
+            self.d[ngram] = (self.d.get(ngram) or 0) + 1
+
+    def sim(self, other: "Ngram") -> float:
+        return __class__.similarity(self, other)
+    
+    def __str__(self) -> str:
+        return self.original_s
+    
+    @staticmethod
+    def similarity(a: "Ngram", b: "Ngram") -> float:
+        """Cosine similarity"""
+        # We compute the dot product:
+        out: float = sum(v * b.d.get(k, 0) for k, v in a.d.items())
+        # We then compute the norm of each vector
+        n1: float = math.sqrt(sum(v ** 2 for v in a.d.values()))
+        n2: float = math.sqrt(sum(v ** 2 for v in b.d.values()))
+        if n1 * n2 == 0: return 0.0
+        return out / (n1 * n2)
+    
+    @staticmethod
+    def build_similarity_map(
+        s1: Iterable[str], 
+        s2: Iterable[str],
+        n: int = 3,
+    ) -> pd.DataFrame:
+        """
+        Build a 2D similarity map between 2 sets of strings
+        s1 will be in dataframe index
+        s2 will be in dataframe column
+        """
+        ngrams_1: List[Ngram] = [Ngram(s=k, n=n) for k in s1]
+        ngrams_2: List[Ngram] = [Ngram(s=k, n=n) for k in s2]
+
+        df = pd.concat([
+            pd.DataFrame(
+                {str(ngram_col): [ngram_col.sim(ngram_idx) for ngram_idx in ngrams_1]})
+            for ngram_col in ngrams_2
+        ], axis=1)
+        df.index = [str(k) for k in ngrams_1]
+        return df
+    
+
+class DataMerger:
 
     def __init__(
-            self, 
-            path_lake: str,
-            path_no_lake: str,
-            debug: bool = False,
+            self,
+            df_flag_path: str,
+            df_outlines_path: str,
+            folder_flag_path: str,
+            folder_outlines_path: str
         ) -> None:
-        print("Loading naturalearthdata.com data")
-        gdf_lake: gpd.GeoDataFrame = gpd.read_file(path_lake)
-        gdf_nolake: gpd.GeoDataFrame = gpd.read_file(path_no_lake)
-        self.df: gpd.GeoDataFrame = self.remove_lakes(gdf_lake, gdf_nolake)
-        self.df = self.merge_countries()
-        self.remove_data(debug=debug)
+        """"""
+        self.df_flag_path: str = df_flag_path
+        self.df_outlines_path: str = df_outlines_path
+        self.folder_flag_path: str = folder_flag_path
+        self.folder_outlines_path: str = folder_outlines_path
 
-        self.df.sort_values(NAME_COL, inplace=True)
-        self.df.reset_index(inplace=True, drop=True)
-
-        self.shift_countries()
-        self.draw_all_countries()
-    
-    def shift_countries(self):
+    def merge_datasets(
+            self,
+            df_save_path: str,
+    ) -> pd.DataFrame:
         """
-        Some countries like Russia, new zealand, are distorted because
-        they are on the left & right side of the used common projection
+        In order to associate outline & flag data together, we will process
+        the lowercased file name of both folders, get the n-grams of the name
+        and then make a similarity measure.
         """
-        geometry_shift: Dict[str, float] = {
-            "Russia": 180,
-            "United States of America": 180,
-            "New Zealand": 180,
-            "Fiji": 180,
-            "Kiribati": 180,
-        }
-        for country_name, offset in geometry_shift.items():
-            m: pd.Series = self.df["FINAL_GEOUNIT"] == country_name
-            self.df.loc[m, "geometry"] = self.df.loc[m, "geometry"].apply(
-                lambda geom: shift_geometry(geom, offset)
-            )
+        s1: List[str] = os.listdir(self.folder_flag_path)
+        s2: List[str] = os.listdir(self.folder_outlines_path)
 
+        df: pd.DataFrame = Ngram.build_similarity_map(s1, s2)
 
-    def merge_countries(self) -> gpd.GeoDataFrame:
-        """Manually merges country together"""
+        d, df2 = DataMerger.solve_similarity_map(df, 0.48)
+        # Manually updating the outliers:
+        d.update({
+            "Côte d'Ivoire.png": "Ivory_Coast.png",  # Traduction
+            "DR Congo.png": "Democratic_Republic_of_the_Congo.png",
+            "Macau.png": "Macao_S.A.R.png",
+            "Timor-Leste.png": "East_Timor.png",     # Traduction
+        })
+        # Loading flag df and adding column to merge
+        df_flag = pd.read_csv(self.df_flag_path, sep=";")
+        df_flag["outline_file_name"] = df_flag["flag_file_name"].map(d)
+        # Loading outline df
+        df_outline = pd.read_csv(self.df_outlines_path, sep=";")
 
-        d_map: Dict[str, str] = {
-            # Georgia
-            "Ajaria": "Georgia",
-            "Georgia": "Georgia",
-            # Cyprus
-            "Akrotiri Sovereign Base Area": "Cyprus",
-            "Dhekelia Sovereign Base Area": "Cyprus",
-            "Cyprus No Mans Area": "Cyprus",
-            "Northern Cyprus": "Cyprus",
-            "Cyprus": "Cyprus",
-            # Antigua & Barbuda
-            "Antigua": "Antigua and Barbuda",
-            "Barbuda": "Antigua and Barbuda",
-            # Bosnia and Herzegovina
-            "Brcko District": "Bosnia and Herzegovina",
-            "Bosnia and Herzegovina": "Bosnia and Herzegovina",
-            "Republic Srpska": "Bosnia and Herzegovina",
-            # Solomon Islands
-            "Bougainville": "Solomon Islands",
-            # Belgium
-            "Brussels Capital Region": "Belgium",
-            "Flemish Region": "Belgium",
-            "Walloon Region": "Belgium",
-            # Iraq
-            "Iraqi Kurdistan": "Iraq",
-            "Iraq": "Iraq",
-            # Kazakhstan
-            "Baykonur Cosmodrome": "Kazakhstan",
-            "Kazakhstan": "Kazakhstan",
-            # South Korea
-            "Korean Demilitarized Zone (south)": "South Korea",
-            "South Korea": "South Korea",
-            # North Korea
-            "Korean Demilitarized Zone (north)": "North Korea",
-            "North Korea": "North Korea",
-            # United Kingdom
-            "Northern Ireland": "United Kingdom",
-            "Scotland": "United Kingdom",
-            "Wales": "United Kingdom",
-            # Somalia
-            "Puntland": "Somalia",
-            "Somalia": "Somalia",
-            "Somaliland": "Somalia",
-            # Serbia
-            "Serbia": "Serbia",
-            "Vojvodina" : "Serbia",
-            # Tanzania
-            "Zanzibar": "Tanzania",
-            "Tanzania": "Tanzania",
-        }
-        self.df.reset_index(inplace=True, drop=True)
-        self.df["FINAL_GEOUNIT"] = self.df["GEOUNIT"].map(d_map)  # Initializing column as empty
-        m = self.df["FINAL_GEOUNIT"].isna()
-        self.df.loc[m, "FINAL_GEOUNIT"] = self.df.loc[m, "GEOUNIT"]
-        return self.df
-
-
-    def remove_lakes(
-            self, 
-            gdf_lake: gpd.GeoDataFrame,
-            gdf_nolake: gpd.GeoDataFrame,
-        ) -> gpd.GeoDataFrame:
-        out: List[pd.DataFrame] = []
-        pbar = tqdm.tqdm(enumerate(gdf_lake["GEOUNIT"].sort_values().items()), desc="")
-        nrows: int = len(gdf_lake)
-        for j, (idx, country_name) in pbar:
-            pbar.set_description(f"Removing lakes: {country_name} ({j + 1} / {nrows})")
-
-            df_country_lake: gpd.GeoDataFrame = gdf_lake[gdf_lake["GEOUNIT"] == country_name]
-            sov: str = df_country_lake["SOVEREIGNT"].iloc[0]
-            df_country_no_lake: gpd.GeoDataFrame = gdf_nolake[gdf_nolake["SOVEREIGNT"] == sov]
-            if df_country_no_lake.empty:
-                print(f"No no-lake data for {country_name} (sovereignty = {sov})")
-            else:
-                df = df_country_lake.overlay(
-                    right=df_country_no_lake[["geometry"]],
-                    how="intersection",
-                    keep_geom_type=False
-                )
-                out.append(df)
-        return pd.concat(out)
-
-
-    def remove_data(self, debug: bool = False) -> None:
-        """Removes some data that is too low resolution"""
-        removed: List[str] = [
-            "Antarctica", 
+        df = pd.merge(
+            left=df_flag,
+            right=df_outline,
+            on=["outline_file_name"],
+            how="outer",
+        )
+        # the map will be d[flag] => outlines
+        outline_removed: List[str] = [
             "Ashmore and Cartier Islands",
             "Bajo Nuevo Bank (Petrel Is.)",
             "Baker Island",
@@ -182,111 +138,61 @@ class OutlineDrawer:
             "Midway Islands", "Navassa Island",
             "Palmyra Atoll", "Saint Barthelemy",
             "Scarborough Reef", "Siachen Glacier",
-            "West Bank", "Western Sahara",
-            
+            "West Bank", "Western Sahara", "Seranilla Bank"
+            "Southern Patagonian Ice Field",
+            "Heard Island and McDonald Islands",
             "Nauru", "Saint Helena", "Saint Martin",
             "Sint Maarten", "Tokelau", "UNDOF",
             "US Naval Base Guantanamo Bay", "Wake Atoll",
         ]
-        if not debug:
-            mask: pd.Series = ~self.df["FINAL_GEOUNIT"].isin(removed)
-            self.df = self.df[mask]
-        else:
-            mask: pd.Series = self.df["FINAL_GEOUNIT"].isna()
-            for geounit_to_remove in removed:
-                mask_temp: pd.Series = self.df["FINAL_GEOUNIT"] == geounit_to_remove
-                if mask_temp.sum() == 0:
-                    print(f"remove_data | No country found with geounit={geounit_to_remove}")
-                mask &= mask_temp
-            self.df = self.df[mask]
+        # We make some outlines unusable
+        df.loc[:, "outline_unuseable"] = df["FINAL_GEOUNIT"].isin(outline_removed).fillna(False)
 
-    def draw_all_countries(self) -> None:
-        # We iterate on the sub-unit (separating France from its islands etc...)
-        self.df.sort_values(by="FINAL_GEOUNIT", inplace=True)
-        self.df.reset_index(inplace=True, drop=True)
-        pbar = tqdm.tqdm(enumerate(self.df["FINAL_GEOUNIT"].unique()), desc="")
-        nrows: int = len(self.df)
-        out_records: List[Dict[str, str]] = []
-        for j, country_name in pbar:
-            pbar.set_description(f"Drawing country outlines: {country_name} ({j} / {nrows})")
-            df = self.df.loc[self.df["FINAL_GEOUNIT"] == country_name, :]
-
-            fig, ax = plt.subplots(figsize=(10, 10))
-            fig.patch.set_facecolor('black')
-            ax.set_facecolor('black')
-            df.plot(ax=ax, facecolor='white', edgecolor='white')
-            ax.set_axis_off()
-            # We remove all non-alphanum characters and replace spaces with underscore
-            file_name: str = __class__.get_file_name(country_name)
-            file_path: str = f"files/outlines/{file_name}.png"
-            out_records.append({
-                "file_name": file_name,
-                "file_path": file_path,
-                "FINAL_GEOUNIT": country_name,
-            })
-            # We write the image to a PIL Image
-            buf = io.BytesIO()
-            plt.savefig(
-                buf, format='png', bbox_inches='tight', 
-                pad_inches=0, facecolor='black', dpi=300)
-            buf.seek(0)
-            # We ensure that the image is square
-            image: Image = Image.open(buf)
-            image = __class__.square_image(image)
-            image.save(file_path)
-            time.sleep(1)
-            try:
-                plt.close()
-            except:
-                pass
-        df_path: str = "files/DATAFRAME_outlines.csv"
-        df = pd.DataFrame.from_records(out_records)
-        df.to_csv(df_path, sep=";", index=False)
-        
-    @staticmethod
-    def get_file_name(country_name: str) -> str:
-        if len(country_name) == 0: raise ValueError("Empty country name")
-        words: List[str] = country_name.split(" ")
-        return "_".join(
-            ["".join(
-                [letter for letter in word if letter])
-                for word in words
-            ])
+        df.to_csv(df_save_path, sep=";", index=False)
+        return df
     
     @staticmethod
-    def square_image(image: Image) -> Image:
-        width: int; height: int
-        width, height = image.size
-        n: int = max(width, height)
-        return __class__.pad_image(image, target_height=n, target_width=n)
+    def solve_similarity_map(df: pd.DataFrame, threshold: float) -> Tuple[
+            Dict[str, str], 
+            pd.DataFrame
+        ]:
+        d, df2 = __class__.__solve_similarity_map(df, threshold)
+        d_final: Dict[str, str] = {}
+        i: int = 1
+        while d:
+            print(f"solve_similarity_map | Step {i} | {len(d)} pairs created")
+            d_final = {**d_final, **d}
+            d, df2 = __class__.__solve_similarity_map(df2, threshold)
+        return d_final, df2
+
+
 
     @staticmethod
-    def pad_image(image: Image, target_width: int, target_height: int) -> Image:
-        original_width: int; original_height: int
-        original_width, original_height = image.size
-
-        # Calculate the padding needed on each side
-        left_padding: int = (target_width - original_width) // 2
-        top_padding: int = (target_height - original_height) // 2
-        right_padding: int = target_width - original_width - left_padding
-        bottom_padding: int = target_height - original_height - top_padding
-
-        # Create a new image with the target dimensions and a black background
-        new_image: Image = Image.new("RGB", (target_width, target_height), color=(0, 0, 0))
-
-        # Paste the original image onto the center of the new image
-        new_image.paste(image, (left_padding, top_padding))
-
-        return new_image
-
-
-
+    def __solve_similarity_map(df: pd.DataFrame, threshold: float) -> Tuple[
+            Dict[str, str], 
+            pd.DataFrame
+        ]:
+        """Solves the similarity map and returns a mapping s1 => s2"""
+        d_1: Dict[str, str] = {}
+        for name_1, row in df.iterrows():
+            s: pd.Series = row[row >= threshold].sort_values(ascending=False)
+            if len(s) >= 1:
+                d_1[name_1] = s.index[0]
+        d_2: Dict[str, str] = {}
+        for name_2, col in df.transpose().iterrows():
+            s: pd.Series = col[col >= threshold].sort_values(ascending=False)
+            if len(s) >= 1:
+                d_2[name_2] = s.index[0]
+        s = pd.Series(d_1)
+        d = s[s.map(d_2) == s.index].to_dict()
+        return d, df.loc[~df.index.isin(d.keys()), ~df.columns.isin(d.values())]
 
 if __name__ == "__main__":
-    shp_path_with_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_map_units", "ne_10m_admin_0_map_units.shp")
-    # shp_path_with_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_countries_iso", "ne_10m_admin_0_countries_iso.shp")
-    shp_path_without_lakes: str = os.path.join("files", "raw", "ne_10m_admin_0_countries_lakes", "ne_10m_admin_0_countries_lakes.shp")
-    
-    od = OutlineDrawer(
-        path_lake=shp_path_with_lakes,
-        path_no_lake=shp_path_without_lakes)
+    dm = DataMerger(
+        df_flag_path="files/df_flags.csv",
+        df_outlines_path="files/df_outlines.csv",
+        folder_flag_path="files/flags",
+        folder_outlines_path="files/outlines",
+    )
+    df_path: str = "files/merged_df.csv"
+    dm.merge_datasets(df_save_path=df_path)

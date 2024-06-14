@@ -1,0 +1,255 @@
+population;area;name;flag_file_path;flag_file_name;capital;continent
+32225560;652230;Afghanistan;files/flags\Afghanistan.png;Afghanistan.png;Kabul;Asia
+29789;1580;Åland Islands;files/flags\Åland Islands.png;Åland Islands.png;Mariehamn;Europe
+2862427;28748;Albania;files/flags\Albania.png;Albania.png;Tirana;Europe
+43000000;2381740;Algeria;files/flags\Algeria.png;Algeria.png;Algiers;Africa
+56700;199;American Samoa;files/flags\American Samoa.png;American Samoa.png;Pago Pago;Oceania
+77543;468;Andorra;files/flags\Andorra.png;Andorra.png;Andorra la Vella;Europe
+31127674;1246700;Angola;files/flags\Angola.png;Angola.png;Luanda;Africa
+14869;91;Anguilla;files/flags\Anguilla.png;Anguilla.png;The Valley;North America
+3000;14000000;Antarctica;files/flags\Antarctica.png;Antarctica.png;;
+96453;442;Antigua and Barbuda;files/flags\Antigua and Barbuda.png;Antigua and Barbuda.png;Saint John's;North America
+44938712;2780400;Argentina;files/flags\Argentina.png;Argentina.png;Buenos Aires;South America
+2957500;29743;Armenia;files/flags\Armenia.png;Armenia.png;Yerevan;Asia
+112309;180;Aruba;files/flags\Aruba.png;Aruba.png;Oranjestad;North America
+25627280;7692020;Australia;files/flags\Australia.png;Australia.png;Canberra;Oceania
+8902600;83871;Austria;files/flags\Austria.png;Austria.png;Vienna;Europe
+10067108;86600;Azerbaijan;files/flags\Azerbaijan.png;Azerbaijan.png;Baku;Asia
+385340;13943;Bahamas;files/flags\Bahamas.png;Bahamas.png;Nassau;North America
+1543300;778;Bahrain;files/flags\Bahrain.png;Bahrain.png;Manama;Asia
+168163758;147570;Bangladesh;files/flags\Bangladesh.png;Bangladesh.png;Dhaka;Asia
+287025;430;Barbados;files/flags\Barbados.png;Barbados.png;Bridgetown;North America
+9413446;207600;Belarus;files/flags\Belarus.png;Belarus.png;Minsk;Europe
+11522169;30528;Belgium;files/flags\Belgium.png;Belgium.png;Brussels;Europe
+408487;22966;Belize;files/flags\Belize.png;Belize.png;Belmopan;North America
+11733059;114763;Benin;files/flags\Benin.png;Benin.png;Porto-Novo;Africa
+64027;54;Bermuda;files/flags\Bermuda.png;Bermuda.png;Hamilton;North America
+741672;38394;Bhutan;files/flags\Bhutan.png;Bhutan.png;Thimphu;Asia
+11469896;1098580;Bolivia;files/flags\Bolivia.png;Bolivia.png;Sucre;South America
+3301000;51209;Bosnia and Herzegovina;files/flags\Bosnia and Herzegovina.png;Bosnia and Herzegovina.png;Sarajevo;Europe
+2338851;581730;Botswana;files/flags\Botswana.png;Botswana.png;Gaborone;Africa
+0;49;Bouvet Island;files/flags\Bouvet Island.png;Bouvet Island.png;;
+211173432;8515770;Brazil;files/flags\Brazil.png;Brazil.png;Brasília;South America
+0;60;British Indian Ocean Territory;files/flags\British Indian Ocean Territory.png;British Indian Ocean Territory.png;Diego Garcia;Africa
+442400;5765;Brunei;files/flags\Brunei.png;Brunei.png;Bandar Seri Begawan;Asia
+7000039;111002;Bulgaria;files/flags\Bulgaria.png;Bulgaria.png;Sofia;Europe
+20870060;274222;Burkina Faso;files/flags\Burkina Faso.png;Burkina Faso.png;Ouagadougou;Africa
+10953317;27834;Burundi;files/flags\Burundi.png;Burundi.png;Gitega;Africa
+15288489;181035;Cambodia;files/flags\Cambodia.png;Cambodia.png;Phnom Penh;Asia
+25876000;475442;Cameroon;files/flags\Cameroon.png;Cameroon.png;Yaoundé;Africa
+37935814;9984670;Canada;files/flags\Canada.png;Canada.png;Ottawa;North America
+550483;4033;Cape Verde;files/flags\Cape Verde.png;Cape Verde.png;Praia;Africa
+25157;328;Caribbean Netherlands;files/flags\Caribbean Netherlands.png;Caribbean Netherlands.png;;
+65813;264;Cayman Islands;files/flags\Cayman Islands.png;Cayman Islands.png;George Town;North America
+5496011;622984;Central African Republic;files/flags\Central African Republic.png;Central African Republic.png;Bangui;Africa
+15692969;1284000;Chad;files/flags\Chad.png;Chad.png;N'Djamena;Africa
+19107216;756102;Chile;files/flags\Chile.png;Chile.png;Santiago;South America
+1401492920;9596960;China;files/flags\China.png;China.png;Beijing;Asia
+1928;135;Christmas Island;files/flags\Christmas Island.png;Christmas Island.png;Flying Fish Cove;Oceania
+538;14;Cocos Islands;files/flags\Cocos Islands.png;Cocos Islands.png;West Island;Oceania
+49395678;1141750;Colombia;files/flags\Colombia.png;Colombia.png;Bogotá;South America
+873724;1862;Comoros;files/flags\Comoros.png;Comoros.png;Moroni;Africa
+5380508;342000;Republic of the Congo;files/flags\Republic of the Congo.png;Republic of the Congo.png;Brazzaville;Africa
+86790567;2344860;DR Congo;files/flags\DR Congo.png;DR Congo.png;Kinshasa;Africa
+15200;236;Cook Islands;files/flags\Cook Islands.png;Cook Islands.png;Avarua;Oceania
+5058007;51100;Costa Rica;files/flags\Costa Rica.png;Costa Rica.png;San José;North America
+25823071;322463;Côte d'Ivoire;files/flags\Côte d'Ivoire.png;Côte d'Ivoire.png;Yamoussoukro;Africa
+4076246;56594;Croatia;files/flags\Croatia.png;Croatia.png;Zagreb;Europe
+11209628;109884;Cuba;files/flags\Cuba.png;Cuba.png;Havana;North America
+158665;444;Curaçao;files/flags\Curaçao.png;Curaçao.png;Willemstad;North America
+875900;9251;Cyprus;files/flags\Cyprus.png;Cyprus.png;Nicosia;Europe
+10681161;78865;Czechia;files/flags\Czechia.png;Czechia.png;Prague;Europe
+5822763;43094;Denmark;files/flags\Denmark.png;Denmark.png;Copenhagen;Europe
+1078373;23200;Djibouti;files/flags\Djibouti.png;Djibouti.png;Djibouti;Africa
+71808;751;Dominica;files/flags\Dominica.png;Dominica.png;Roseau;North America
+10358320;48671;Dominican Republic;files/flags\Dominican Republic.png;Dominican Republic.png;Santo Domingo;North America
+17431712;276841;Ecuador;files/flags\Ecuador.png;Ecuador.png;Quito;South America
+100052943;1002450;Egypt;files/flags\Egypt.png;Egypt.png;Cairo;Africa, Asia
+6704864;21041;El Salvador;files/flags\El Salvador.png;El Salvador.png;San Salvador;North America
+55977178;130279;England;files/flags\England.png;England.png;London;
+1358276;28051;Equatorial Guinea;files/flags\Equatorial Guinea.png;Equatorial Guinea.png;Malabo;Africa
+3497117;117600;Eritrea;files/flags\Eritrea.png;Eritrea.png;Asmara;Africa
+1328360;45227;Estonia;files/flags\Estonia.png;Estonia.png;Tallinn;Europe
+1093238;17364;Eswatini;files/flags\Eswatini.png;Eswatini.png;Lobamba;Africa
+98665000;1104300;Ethiopia;files/flags\Ethiopia.png;Ethiopia.png;Addis Ababa;Africa
+3198;12173;Falkland Islands;files/flags\Falkland Islands.png;Falkland Islands.png;Stanley;South America
+52124;1393;Faroe Islands;files/flags\Faroe Islands.png;Faroe Islands.png;Tórshavn;Europe
+884887;18272;Fiji;files/flags\Fiji.png;Fiji.png;Suva;Oceania
+5527573;338424;Finland;files/flags\Finland.png;Finland.png;Helsinki;Europe
+67064000;640679;France;files/flags\France.png;France.png;Paris;Europe
+290691;83534;French Guiana;files/flags\French Guiana.png;French Guiana.png;Cayenne;South America
+275918;4167;French Polynesia;files/flags\French Polynesia.png;French Polynesia.png;Papeetē;Oceania
+0;7747;French Southern and Antarctic Lands;files/flags\French Southern and Antarctic Lands.png;French Southern and Antarctic Lands.png;Port-aux-Français;
+2172579;267668;Gabon;files/flags\Gabon.png;Gabon.png;Libreville;Africa
+2347706;11295;Gambia;files/flags\Gambia.png;Gambia.png;Banjul;Africa
+3723464;69700;Georgia;files/flags\Georgia.png;Georgia.png;Tbilisi;Asia
+83149300;357114;Germany;files/flags\Germany.png;Germany.png;Berlin;Europe
+30280811;238533;Ghana;files/flags\Ghana.png;Ghana.png;Accra;Africa
+33701;6;Gibraltar;files/flags\Gibraltar.png;Gibraltar.png;Gibraltar;Europe
+10724599;131957;Greece;files/flags\Greece.png;Greece.png;Athens;Europe
+56081;2166090;Greenland;files/flags\Greenland.png;Greenland.png;Nuuk;North America
+112003;344;Grenada;files/flags\Grenada.png;Grenada.png;St. George's;North America
+395700;1628;Guadeloupe;files/flags\Guadeloupe.png;Guadeloupe.png;Basse-Terre;North America
+172400;549;Guam;files/flags\Guam.png;Guam.png;Hagåtña;Oceania
+16604026;108889;Guatemala;files/flags\Guatemala.png;Guatemala.png;Guatemala City;North America
+62792;78;Guernsey;files/flags\Guernsey.png;Guernsey.png;St. Peter Port;Europe
+12218357;245857;Guinea;files/flags\Guinea.png;Guinea.png;Conakry;Africa
+1604528;36125;Guinea-Bissau;files/flags\Guinea-Bissau.png;Guinea-Bissau.png;Bissau;Africa
+782766;214969;Guyana;files/flags\Guyana.png;Guyana.png;Georgetown;South America
+11577779;27750;Haiti;files/flags\Haiti.png;Haiti.png;Port-au-Prince;North America
+0;412;Heard Island and McDonald Islands;files/flags\Heard Island and McDonald Islands.png;Heard Island and McDonald Islands.png;;
+9158345;112492;Honduras;files/flags\Honduras.png;Honduras.png;Tegucigalpa;North America
+7500700;1104;Hong Kong;files/flags\Hong Kong.png;Hong Kong.png;City of Victoria;Asia
+9772756;93028;Hungary;files/flags\Hungary.png;Hungary.png;Budapest;Europe
+364260;103000;Iceland;files/flags\Iceland.png;Iceland.png;Reykjavik;Europe
+1359072550;3287260;India;files/flags\India.png;India.png;New Delhi;Asia
+266911900;1910930;Indonesia;files/flags\Indonesia.png;Indonesia.png;Jakarta;Asia, Oceania
+83230120;1648200;Iran;files/flags\Iran.png;Iran.png;Tehran;Asia
+39127900;438317;Iraq;files/flags\Iraq.png;Iraq.png;Baghdad;Asia
+4921500;70273;Ireland;files/flags\Ireland.png;Ireland.png;Dublin;Europe
+83314;572;Isle of Man;files/flags\Isle of Man.png;Isle of Man.png;Douglas;Europe
+9164160;20770;Israel;files/flags\Israel.png;Israel.png;Jerusalem;Asia
+60247214;301339;Italy;files/flags\Italy.png;Italy.png;Rome;Europe
+2726667;10991;Jamaica;files/flags\Jamaica.png;Jamaica.png;Kingston;North America
+126010000;377975;Japan;files/flags\Japan.png;Japan.png;Tokyo;Asia
+106800;116;Jersey;files/flags\Jersey.png;Jersey.png;Saint Helier;Europe
+10622608;89342;Jordan;files/flags\Jordan.png;Jordan.png;Amman;Asia
+18651680;2724900;Kazakhstan;files/flags\Kazakhstan.png;Kazakhstan.png;Nur-Sultan;Asia
+47564296;580367;Kenya;files/flags\Kenya.png;Kenya.png;Nairobi;Africa
+120100;811;Kiribati;files/flags\Kiribati.png;Kiribati.png;South Tarawa;Oceania
+25450000;120540;North Korea;files/flags\North Korea.png;North Korea.png;Pyongyang;Asia
+51780579;100210;South Korea;files/flags\South Korea.png;South Korea.png;Seoul;Asia
+1795666;10887;Kosovo;files/flags\Kosovo.png;Kosovo.png;Pristina;Europe
+4420110;17818;Kuwait;files/flags\Kuwait.png;Kuwait.png;Kuwait City;Asia
+6490300;199951;Kyrgyzstan;files/flags\Kyrgyzstan.png;Kyrgyzstan.png;Bishkek;Asia
+7123205;236800;Laos;files/flags\Laos.png;Laos.png;Vientiane;Asia
+1906800;64559;Latvia;files/flags\Latvia.png;Latvia.png;Riga;Europe
+6855713;10452;Lebanon;files/flags\Lebanon.png;Lebanon.png;Beirut;Asia
+2007201;30355;Lesotho;files/flags\Lesotho.png;Lesotho.png;Maseru;Africa
+4475353;111369;Liberia;files/flags\Liberia.png;Liberia.png;Monrovia;Africa
+6777452;1759540;Libya;files/flags\Libya.png;Libya.png;Tripoli;Africa
+38557;160;Liechtenstein;files/flags\Liechtenstein.png;Liechtenstein.png;Vaduz;Europe
+2793350;65300;Lithuania;files/flags\Lithuania.png;Lithuania.png;Vilnius;Europe
+613894;2586;Luxembourg;files/flags\Luxembourg.png;Luxembourg.png;Luxembourg;Europe
+676100;30;Macau;files/flags\Macau.png;Macau.png;;
+25680342;587041;Madagascar;files/flags\Madagascar.png;Madagascar.png;Antananarivo;Africa
+17563749;118484;Malawi;files/flags\Malawi.png;Malawi.png;Lilongwe;Africa
+32700760;330803;Malaysia;files/flags\Malaysia.png;Malaysia.png;Kuala Lumpur;Asia
+374775;300;Maldives;files/flags\Maldives.png;Maldives.png;Malé;Asia
+19973000;1240190;Mali;files/flags\Mali.png;Mali.png;Bamako;Africa
+493559;316;Malta;files/flags\Malta.png;Malta.png;Valletta;Europe
+55500;181;Marshall Islands;files/flags\Marshall Islands.png;Marshall Islands.png;Majuro;Oceania
+376480;1128;Martinique;files/flags\Martinique.png;Martinique.png;Fort-de-France;North America
+4077347;1030700;Mauritania;files/flags\Mauritania.png;Mauritania.png;Nouakchott;Africa
+1265985;2040;Mauritius;files/flags\Mauritius.png;Mauritius.png;Port Louis;Africa
+279471;374;Mayotte;files/flags\Mayotte.png;Mayotte.png;Mamoudzou;Africa
+126577691;1964380;Mexico;files/flags\Mexico.png;Mexico.png;Mexico City;North America
+104468;702;Micronesia;files/flags\Micronesia.png;Micronesia.png;Palikir;Oceania
+2681735;33846;Moldova;files/flags\Moldova.png;Moldova.png;Chișinău;Europe
+38300;2.02;Monaco;files/flags\Monaco.png;Monaco.png;Monaco;Europe
+3304526;1564110;Mongolia;files/flags\Mongolia.png;Mongolia.png;Ulan Bator;Asia
+622359;13812;Montenegro;files/flags\Montenegro.png;Montenegro.png;Podgorica;Europe
+4989;102;Montserrat;files/flags\Montserrat.png;Montserrat.png;Plymouth;North America
+35821024;446550;Morocco;files/flags\Morocco.png;Morocco.png;Rabat;Africa
+28571310;801590;Mozambique;files/flags\Mozambique.png;Mozambique.png;Maputo;Africa
+54339766;676578;Myanmar;files/flags\Myanmar.png;Myanmar.png;Naypyidaw;Asia
+2458936;825615;Namibia;files/flags\Namibia.png;Namibia.png;Windhoek;Africa
+11000;21;Nauru;files/flags\Nauru.png;Nauru.png;Yaren;Oceania
+29609623;147181;Nepal;files/flags\Nepal.png;Nepal.png;Kathmandu;Asia
+17438081;41850;Netherlands;files/flags\Netherlands.png;Netherlands.png;Amsterdam;Europe
+282200;18575;New Caledonia;files/flags\New Caledonia.png;New Caledonia.png;Nouméa;Oceania
+4961213;270467;New Zealand;files/flags\New Zealand.png;New Zealand.png;Wellington;Oceania
+6460411;130373;Nicaragua;files/flags\Nicaragua.png;Nicaragua.png;Managua;North America
+22314743;1267000;Niger;files/flags\Niger.png;Niger.png;Niamey;Africa
+200963599;923768;Nigeria;files/flags\Nigeria.png;Nigeria.png;Abuja;Africa
+1520;260;Niue;files/flags\Niue.png;Niue.png;Alofi;Oceania
+1756;36;Norfolk Island;files/flags\Norfolk Island.png;Norfolk Island.png;Kingston;Oceania
+2077132;25713;North Macedonia;files/flags\North Macedonia.png;North Macedonia.png;Skopje;Europe
+1885400;14130;Northern Ireland;files/flags\Northern Ireland.png;Northern Ireland.png;Belfast;
+56200;464;Northern Mariana Islands;files/flags\Northern Mariana Islands.png;Northern Mariana Islands.png;Saipan;Oceania
+5356789;323802;Norway;files/flags\Norway.png;Norway.png;Oslo;Europe
+4664790;309500;Oman;files/flags\Oman.png;Oman.png;Muscat;Asia
+218741520;907132;Pakistan;files/flags\Pakistan.png;Pakistan.png;Islamabad;Asia
+17900;459;Palau;files/flags\Palau.png;Palau.png;Ngerulmud;Oceania
+5051953;6020;Palestine;files/flags\Palestine.png;Palestine.png;Ramallah;Asia
+4218808;75417;Panama;files/flags\Panama.png;Panama.png;Panama City;North America
+8935000;462840;Papua New Guinea;files/flags\Papua New Guinea.png;Papua New Guinea.png;Port Moresby;Oceania
+7152703;406752;Paraguay;files/flags\Paraguay.png;Paraguay.png;Asunción;South America
+32131400;1285220;Peru;files/flags\Peru.png;Peru.png;Lima;South America
+108323702;300000;Philippines;files/flags\Philippines.png;Philippines.png;Manila;Asia
+50;47;Pitcairn Islands;files/flags\Pitcairn Islands.png;Pitcairn Islands.png;Adamstown;Oceania
+38386000;312696;Poland;files/flags\Poland.png;Poland.png;Warsaw;Europe
+10276617;92090;Portugal;files/flags\Portugal.png;Portugal.png;Lisbon;Europe
+3193694;8870;Puerto Rico;files/flags\Puerto Rico.png;Puerto Rico.png;San Juan;North America
+2747282;11586;Qatar;files/flags\Qatar.png;Qatar.png;Doha;Asia
+859959;2511;Réunion;files/flags\Réunion.png;Réunion.png;Saint-Denis;Africa
+19405156;238397;Romania;files/flags\Romania.png;Romania.png;Bucharest;Europe
+146780720;17098200;Russia;files/flags\Russia.png;Russia.png;Moscow;Asia, Europe
+12374397;26338;Rwanda;files/flags\Rwanda.png;Rwanda.png;Kigali;Africa
+9793;21;Saint Barthélemy;files/flags\Saint Barthélemy.png;Saint Barthélemy.png;Gustavia;North America
+5633;394;Saint Helena, Ascension and Tristan da Cunha;files/flags\Saint Helena, Ascension and Tristan da Cunha.png;Saint Helena, Ascension and Tristan da Cunha.png;Jamestown;Africa
+52823;261;Saint Kitts and Nevis;files/flags\Saint Kitts and Nevis.png;Saint Kitts and Nevis.png;Basseterre;North America
+178696;616;Saint Lucia;files/flags\Saint Lucia.png;Saint Lucia.png;Castries;North America
+35107;53;Saint Martin;files/flags\Saint Martin.png;Saint Martin.png;Marigot;North America
+6008;242;Saint Pierre and Miquelon;files/flags\Saint Pierre and Miquelon.png;Saint Pierre and Miquelon.png;Saint-Pierre;North America
+110608;389;Saint Vincent and the Grenadines;files/flags\Saint Vincent and the Grenadines.png;Saint Vincent and the Grenadines.png;Kingstown;North America
+200874;2842;Samoa;files/flags\Samoa.png;Samoa.png;Apia;Oceania
+33574;61;San Marino;files/flags\San Marino.png;San Marino.png;City of San Marino;Europe
+201784;964;São Tomé and Príncipe;files/flags\São Tomé and Príncipe.png;São Tomé and Príncipe.png;São Tomé;Africa
+34218169;2149690;Saudi Arabia;files/flags\Saudi Arabia.png;Saudi Arabia.png;Riyadh;Asia
+5424800;77933;Scotland;files/flags\Scotland.png;Scotland.png;‎Edinburgh‎;
+16209125;196722;Senegal;files/flags\Senegal.png;Senegal.png;Dakar;Africa
+6963764;88361;Serbia;files/flags\Serbia.png;Serbia.png;Belgrade;Europe
+97625;452;Seychelles;files/flags\Seychelles.png;Seychelles.png;Victoria;Africa
+7901454;71740;Sierra Leone;files/flags\Sierra Leone.png;Sierra Leone.png;Freetown;Africa
+5703600;716;Singapore;files/flags\Singapore.png;Singapore.png;Singapore;Asia
+40614;34;Sint Maarten;files/flags\Sint Maarten.png;Sint Maarten.png;Philipsburg;North America
+5456362;49037;Slovakia;files/flags\Slovakia.png;Slovakia.png;Bratislava;Europe
+2094060;20273;Slovenia;files/flags\Slovenia.png;Slovenia.png;Ljubljana;Europe
+680806;28896;Solomon Islands;files/flags\Solomon Islands.png;Solomon Islands.png;Honiara;Oceania
+15442905;637657;Somalia;files/flags\Somalia.png;Somalia.png;Mogadishu;Africa
+58775022;1221040;South Africa;files/flags\South Africa.png;South Africa.png;Pretoria, Bloemfontein, Cape Town;Africa
+0;3903;South Georgia;files/flags\South Georgia.png;South Georgia.png;King Edward Point;
+12778250;644329;South Sudan;files/flags\South Sudan.png;South Sudan.png;Juba;Africa
+47100396;505992;Spain;files/flags\Spain.png;Spain.png;Madrid;Europe
+21803000;65610;Sri Lanka;files/flags\Sri Lanka.png;Sri Lanka.png;Colombo;Asia
+42295645;1861480;Sudan;files/flags\Sudan.png;Sudan.png;Khartoum;Africa
+581372;163820;Suriname;files/flags\Suriname.png;Suriname.png;Paramaribo;South America
+0;61022;Svalbard and Jan Mayen;files/flags\Svalbard and Jan Mayen.png;Svalbard and Jan Mayen.png;Longyearbyen;Europe
+10327589;450295;Sweden;files/flags\Sweden.png;Sweden.png;Stockholm;Europe
+8586550;41284;Switzerland;files/flags\Switzerland.png;Switzerland.png;Bern;Europe
+17070135;185180;Syria;files/flags\Syria.png;Syria.png;Damascus;Asia
+23604265;36193;Taiwan;files/flags\Taiwan.png;Taiwan.png;Taipei;Asia
+9127000;143100;Tajikistan;files/flags\Tajikistan.png;Tajikistan.png;Dushanbe;Asia
+55890747;945087;Tanzania;files/flags\Tanzania.png;Tanzania.png;Dodoma;Africa
+66474267;513120;Thailand;files/flags\Thailand.png;Thailand.png;Bangkok;Asia
+1387149;14919;Timor-Leste;files/flags\Timor-Leste.png;Timor-Leste.png;Dili;Asia
+7538000;56785;Togo;files/flags\Togo.png;Togo.png;Lomé;Africa
+1400;12;Tokelau;files/flags\Tokelau.png;Tokelau.png;Fakaofo;Oceania
+100651;747;Tonga;files/flags\Tonga.png;Tonga.png;Nuku'alofa;Oceania
+1363985;5130;Trinidad and Tobago;files/flags\Trinidad and Tobago.png;Trinidad and Tobago.png;Port of Spain;South America
+11722038;163610;Tunisia;files/flags\Tunisia.png;Tunisia.png;Tunis;Africa
+83154997;783562;Turkey;files/flags\Turkey.png;Turkey.png;Ankara;Asia, Europe
+5942089;488100;Turkmenistan;files/flags\Turkmenistan.png;Turkmenistan.png;Ashgabat;Asia
+41369;948;Turks and Caicos Islands;files/flags\Turks and Caicos Islands.png;Turks and Caicos Islands.png;Cockburn Town;North America
+10200;26;Tuvalu;files/flags\Tuvalu.png;Tuvalu.png;Funafuti;Oceania
+40299300;241550;Uganda;files/flags\Uganda.png;Uganda.png;Kampala;Africa
+41902416;603500;Ukraine;files/flags\Ukraine.png;Ukraine.png;Kyiv;Europe
+9770529;83600;United Arab Emirates;files/flags\United Arab Emirates.png;United Arab Emirates.png;Abu Dhabi;Asia
+66435600;242495;United Kingdom;files/flags\United Kingdom.png;United Kingdom.png;London;Europe
+329345637;9833520;United States;files/flags\United States.png;United States.png;Washington D.C.;North America
+300;34;United States Minor Outlying Islands;files/flags\United States Minor Outlying Islands.png;United States Minor Outlying Islands.png;;
+3518552;176215;Uruguay;files/flags\Uruguay.png;Uruguay.png;Montevideo;South America
+34034952;447400;Uzbekistan;files/flags\Uzbekistan.png;Uzbekistan.png;Tashkent;Asia
+304500;12189;Vanuatu;files/flags\Vanuatu.png;Vanuatu.png;Port Vila;Oceania
+799;0.44;Vatican City;files/flags\Vatican City.png;Vatican City.png;Vatican City;Europe
+32219521;916445;Venezuela;files/flags\Venezuela.png;Venezuela.png;Caracas;South America
+96208984;331212;Vietnam;files/flags\Vietnam.png;Vietnam.png;Hanoi;Asia
+30030;151;British Virgin Islands;files/flags\British Virgin Islands.png;British Virgin Islands.png;Road Town;North America
+104578;347;United States Virgin Islands;files/flags\United States Virgin Islands.png;United States Virgin Islands.png;Charlotte Amalie;North America
+3139000;20779;Wales;files/flags\Wales.png;Wales.png;Cardiff;
+11700;142;Wallis and Futuna;files/flags\Wallis and Futuna.png;Wallis and Futuna.png;Mata-Utu;Oceania
+582463;266000;Western Sahara;files/flags\Western Sahara.png;Western Sahara.png;El Aaiún;Africa
+29161922;527968;Yemen;files/flags\Yemen.png;Yemen.png;Sana'a;Asia
+17381168;752612;Zambia;files/flags\Zambia.png;Zambia.png;Lusaka;Africa
+15159624;390757;Zimbabwe;files/flags\Zimbabwe.png;Zimbabwe.png;Harare;Africa
