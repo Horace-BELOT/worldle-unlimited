@@ -25,3 +25,4 @@ Flags, capitals and continents are scrapped from [Flagpedia](https://flagpedia.n
 
 - Offer the option to remove the already guessed countries from the dropdown
 - Offer the option to allow multiple guesses before moving to the next country
+- Find better outlines for very small countries with easy-to-distinguish outlines like Monaco.
